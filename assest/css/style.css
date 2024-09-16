@@ -1,0 +1,156 @@
+.lubranta-logo {
+  max-width: 100px;
+}
+
+.lubranta-icon.mb-4 > img {
+  max-width: 160px;
+}
+
+.bg {
+  background-image: url(../image/background-image.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.product-inner2 {
+  width: 50%;
+}
+
+.producted {
+  width: 100%;
+}
+
+.dropdown-menu {
+  border: none;
+  z-index: 1050;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: #495057;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-menu.new {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  z-index: 1060;
+}
+
+.dropdown-submenu:hover .dropdown-menu.new {
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .dropdown-menu {
+    position: static;
+  }
+
+  .dropdown-submenu:hover .dropdown-menu.new {
+    display: block;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .dropdown-menu.new {
+    left: 0;
+    margin-left: 0;
+    top: 31px;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f00;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(248, 0, 0, 0.75);
+}
+
+.h3, h3 {
+  font-size: calc(1.3rem + -0.4vw);
+}
+
+.producted {
+  display: flex;
+}
+
+.main-image {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.main-image {
+  margin-bottom: 15px;
+}
+.image-row {
+  width: 48%;
+  margin-bottom: 10px;
+}
+.image-row-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/*  */
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.core-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .core-value {
+  width: 150px;
+  margin: 10px;
+  background-color: #f10d0d;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} */
+
+.core-value img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.elementor-background-overlay{
+  background-image:url(../image/1-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.icon{
+  background-color:#dc541c;
+}
+.row{
+position: relative;
+}
+.elementor-image-box-content{
+  position: absolute;
+  left: 20%;
+}
