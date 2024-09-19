@@ -438,6 +438,7 @@ body {
 .inqury-outer {
   position: relative;
   z-index: 1;
+  padding-bottom: 150px;
 }
 
 .inqury-outer::before {
@@ -467,6 +468,7 @@ body {
 
 .counter-inner{
   background-color: #fff  ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   width: 90%;
 }
@@ -488,7 +490,7 @@ body {
 }
 
 .image-container {
-  width: 70px;
+  width: 60px;
   height: 52px; 
   margin: 0 auto;
 }
@@ -507,8 +509,49 @@ body {
 .counter {
   position: relative;
   left: 50%;
-  /* top: -69% !important; */
   transform: translate(-45%, 10%);
   z-index: 10;
-  top: -66px;
+  top: -110px;
+}
+/*  */
+.conservation,.infobox-content>h4{
+  color: #dc541c;
+  font-size: 22px;
+}
+
+.infobox-content {
+  padding: 9px;
+}
+.card-image.text-center {
+  padding-top: 10px;
+}
+.card {
+  border: 1px solid #ddd; /* Optional: Adds a border to the card */
+  border-radius: .25rem; /* Optional: Rounds the corners of the card */
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .1); /* Optional: Adds a shadow */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.infobox-content {
+  padding: 1rem;
+}
+.elementor-widget-container>h2.elementor-heading-title.elementor-size-default {
+  
+    color: #54241C1C;
+    font-family: "Rubik", Sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+
+.elementor-widget-container {
+  position: absolute;
+  top: -60px;
+  left: -2px;
 }
