@@ -376,7 +376,7 @@ body {
 
 .slider-item {
   width: 400px;
-  height: 400px;
+  height: 300px;
 }
 
 .oil-container {
@@ -433,6 +433,7 @@ body {
   width: 200px;
   border: 3px solid #b42423;
 }
+
 /*  */
 
 .inqury-outer {
@@ -466,55 +467,66 @@ body {
   z-index: -1;
 }
 
-.counter-inner{
-  background-color: #fff  ;
+.counter-inner {
+  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
-  width: 90%;
 }
 
 
 
 
+.choose-us {
+  margin-top: 150px;
+}
 
-
+@media(max-width:640px) {
+  .choose-us {
+    margin-top: 296px;
+  }
+}
 
 
 
 
 .core-valued {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .image-container {
   width: 60px;
-  height: 52px; 
+  height: 52px;
   margin: 0 auto;
 }
 
 .icon {
-  width: 50px; 
-  height: auto; 
+  width: 50px;
+  height: auto;
 }
 
 .counter-name {
   color: #b42423;
   font-weight: 500;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .counter {
-  position: relative;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, 10%);
+  transform: translate(-50%, 0);
   z-index: 10;
-  top: -110px;
+  top: 75%;
+  width: 100%;
 }
+
 /*  */
-.conservation,.infobox-content>h4{
+
+
+.conservation,
+.infobox-content>h4 {
   color: #dc541c;
   font-size: 22px;
 }
@@ -522,13 +534,24 @@ body {
 .infobox-content {
   padding: 9px;
 }
+.card-mainer {
+  background-image: url(../image/rowbg-img-nine-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+
+
 .card-image.text-center {
   padding-top: 10px;
 }
-.card {
-  border: 1px solid #ddd; /* Optional: Adds a border to the card */
-  border-radius: .25rem; /* Optional: Rounds the corners of the card */
-  box-shadow: 0 0 .5rem rgba(0, 0, 0, .1); /* Optional: Adds a shadow */
+
+.card-ite>.card {
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
   display: flex;
   flex-direction: column;
 }
@@ -541,17 +564,218 @@ body {
 .infobox-content {
   padding: 1rem;
 }
+
 .elementor-widget-container>h2.elementor-heading-title.elementor-size-default {
-  
-    color: #54241C1C;
-    font-family: "Rubik", Sans-serif;
-    font-size: 90px;
-    font-weight: 900;
+
+  color: #54241C1C;
+  font-family: "Rubik", Sans-serif;
+  font-size: 90px;
+  font-weight: 900;
 }
 
 
-.elementor-widget-container {
+.card-ite:hover .hover-effect {
+  top: 190px; 
+  left: 160px !important; 
+  transform: rotateY(360deg);
+  transition: all 0.7s ease-in-out;
+}
+
+.hover-effect {
   position: absolute;
   top: -60px;
-  left: -2px;
+  left: -2px; 
+  transition: all 0.7s ease-in-out; 
+}
+
+
+.infobox-icon img {
+  padding: 10px 10px 10px 10px;
+  border-style: dashed;
+  border-width: 1px 1px 1px 1px;
+  width: 70px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.infobox-icon:hover img {
+  border-radius: 0%;
+}
+
+.infobox-icon>.infobox-content>h4 {
+  color: #000;
+}
+/*  */
+
+
+.form-control {
+  border: none; 
+  border-bottom: 1px solid #000; 
+
+  box-shadow: none; 
+  border-radius: 10px 10px 10px 10px;
+}
+
+.form-control:focus {
+  box-shadow: none; 
+  border-color: #007bff; 
+}
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+::placeholder{
+  color: #ddd !important;
+}
+
+.bg-form {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 150px;
+}
+
+.bg-form::after {
+  content: '';
+  background-image: url(../image/curves2-300x187-2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#b42423;
+  z-index: -1;
+}
+
+
+ .testimonial-content footer, .testimonial-content footer>span {
+  margin-top: 20px;
+  color: #ffffff;
+  font-family: 'Bitter';
+  font-size: 18px;
+}
+
+
+.work-time{
+    margin: -1% 10% 0% 10%;
+    padding: 4% 0% 2% 0%;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+
+/* footer */
+.footer-section {
+  position: relative;
+  background-image: url(../image/composition_of_engine_oil-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #a70000;
+  padding: 17px 0;
+  margin-top: 95px;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent black color */
+  z-index: 1;
+}
+
+.footer-section * {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section .column-title {
+  font-weight: bold;
+  color: #a70000;
+  margin-bottom: 20px;
+}
+.footer-section .contact-info {
+  background-color: #a70000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.footer-section .contact-info h4 {
+  margin-bottom: 20px;
+}
+.footer-section a {
+  color: #a70000;
+  text-decoration: none;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer-section i {
+  margin-right: 10px;
+}
+
+.contact-info {
+  position: absolute;
+  width: 404px;
+  z-index: 10;
+  bottom: 16%;
+}
+
+@media (max-width: 760px) {
+  .footer-section {
+    padding: 20px 0;
+  }
+
+  .footer-section .column-title {
+    font-size: 1.2em;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-section .contact-info {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer-section .contact-info img {
+    display: inline-block;
+  }
+
+  .footer-section p, .footer-section a {
+    font-size: 0.9em;
+  }
+}
+
+
+/* pavan chakki */
+.footer-background-image {
+  background-image: url(../image/bottomBg-1.png); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust height as needed */
 }
