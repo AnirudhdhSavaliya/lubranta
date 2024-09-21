@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #b42423; /* Main color */
+  --secondary-color: #dc541c; /* Secondary color */
+  --background-color: #f2f2f2; /* Background color */
+  --text-color: #000; /* Default text color */
+  --border-color: #a70000; /* Border color */
+  --hover-color: rgba(248, 0, 0, 0.75); /* Hover color */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -76,20 +85,20 @@
 }
 
 .view-more-btn {
-  background-color: #b42423 !important;
+  background-color: var(--primary-color) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #000;
+  color: var(--text-color);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #f00;
+  color: var(--secondary-color);
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: rgba(248, 0, 0, 0.75);
+  color: var(--hover-color);
 }
 
 .h3,
@@ -117,7 +126,7 @@ h3 {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: var(--background-color);
 }
 
 .core-values {
@@ -191,7 +200,7 @@ body {
 
 .our-service-icon {
   z-index: 1;
-  background-color: #dc541c;
+  background-color: var(--secondary-color);
   margin-right: 10px;
   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
@@ -249,7 +258,7 @@ body {
 
 .image-container {
   display: inline-block;
-  background-color: #dc541c;
+  background-color: var(--secondary-color);
   overflow: hidden;
   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
@@ -289,7 +298,7 @@ body {
 }
 
 .info-box-wrapper {
-  border: 1px solid #000;
+  border: 1px solid var(--border-color);
   margin-bottom: 20px;
   width: calc(45% - 10px);
   height: 200px;
@@ -307,7 +316,7 @@ body {
 .box-detail {
   font-size: 40px;
   font-weight: 600;
-  color: #b42423;
+  color: var(--primary-color);
 }
 
 .shape-image {
@@ -321,7 +330,7 @@ body {
 }
 
 .our-advantages-text {
-  color: #b42423 !important;
+  color: var(--primary-color) !important;
   font-size: 20px;
   font-weight: 600;
 }
@@ -336,7 +345,7 @@ body {
 }
 
 .our-main>h2 {
-  color: #b42423 !important;
+  color: var(--primary-color) !important;
 }
 
 .product-dd {
@@ -350,7 +359,7 @@ body {
 
 .product-dd a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
   font-size: 16px;
 }
 
@@ -360,7 +369,7 @@ body {
   left: 0;
   bottom: 0;
   height: 2px;
-  background-color: #b42423;
+  background-color: var(--primary-color);
   width: 100%;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
@@ -410,14 +419,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  background-attachment: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
-
 .benifit-product::after {
   content: '';
   position: absolute;
@@ -431,11 +438,10 @@ body {
 
 .carousel-item>img {
   width: 200px;
-  border: 3px solid #b42423;
+  border: 3px solid var(--primary-color);
 }
 
-/*  */
-
+/* Inquiry Section */
 .inqury-outer {
   position: relative;
   z-index: 1;
@@ -448,7 +454,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  background-attachment: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -473,9 +478,6 @@ body {
   border-radius: 50px;
 }
 
-
-
-
 .choose-us {
   margin-top: 150px;
 }
@@ -485,9 +487,6 @@ body {
     margin-top: 296px;
   }
 }
-
-
-
 
 .core-valued {
   display: flex;
@@ -508,7 +507,7 @@ body {
 }
 
 .counter-name {
-  color: #b42423;
+  color: var(--primary-color);
   font-weight: 500;
   margin-top: 10px;
 }
@@ -522,18 +521,17 @@ body {
   width: 100%;
 }
 
-/*  */
-
-
+/* Content Styling */
 .conservation,
 .infobox-content>h4 {
-  color: #dc541c;
+  color: var(--secondary-color);
   font-size: 22px;
 }
 
 .infobox-content {
   padding: 9px;
 }
+
 .card-mainer {
   background-image: url(../image/rowbg-img-nine-removebg-preview.png);
   background-repeat: no-repeat;
@@ -541,8 +539,6 @@ body {
   background-position: center;
   min-height: 300px;
 }
-
-
 
 .card-image.text-center {
   padding-top: 10px;
@@ -566,13 +562,11 @@ body {
 }
 
 .elementor-widget-container>h2.elementor-heading-title.elementor-size-default {
-
   color: #54241C1C;
   font-family: "Rubik", Sans-serif;
   font-size: 90px;
   font-weight: 900;
 }
-
 
 .card-ite:hover .hover-effect {
   top: 190px; 
@@ -588,11 +582,10 @@ body {
   transition: all 0.7s ease-in-out; 
 }
 
-
 .infobox-icon img {
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border-style: dashed;
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px;
   width: 70px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
@@ -603,29 +596,29 @@ body {
 }
 
 .infobox-icon>.infobox-content>h4 {
-  color: #000;
+  color: var(--text-color);
 }
-/*  */
 
-
+/* Form Styling */
 .form-control {
   border: none; 
-  border-bottom: 1px solid #000; 
-
+  border-bottom: 1px solid var(--text-color); 
   box-shadow: none; 
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 
 .form-control:focus {
   box-shadow: none; 
   border-color: #007bff; 
 }
+
 input::placeholder,
 textarea::placeholder {
-    color: white;
-    opacity: 0.7;
+  color: white;
+  opacity: 0.7;
 }
-::placeholder{
+
+::placeholder {
   color: #ddd !important;
 }
 
@@ -653,35 +646,35 @@ textarea::placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#b42423;
+  background-color: var(--primary-color);
   z-index: -1;
+  border-radius: 20px;
 }
 
-
- .testimonial-content footer, .testimonial-content footer>span {
+/* Testimonial Styling */
+.testimonial-content footer, .testimonial-content footer>span {
   margin-top: 20px;
   color: #ffffff;
   font-family: 'Bitter';
   font-size: 18px;
 }
 
-
-.work-time{
-    margin: -1% 10% 0% 10%;
-    padding: 4% 0% 2% 0%;
-    background-color: #fff;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+/* Work Time Section */
+.work-time {
+  margin: -1% 10% 0% 10%;
+  padding: 4% 0% 2% 0%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
 }
 
-
-/* footer */
+/* Footer Section */
 .footer-section {
   position: relative;
   background-image: url(../image/composition_of_engine_oil-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 5px solid #a70000;
+  border: 5px solid var(--border-color);
   padding: 17px 0;
   margin-top: 95px;
 }
@@ -704,32 +697,39 @@ textarea::placeholder {
 
 .footer-section .column-title {
   font-weight: bold;
-  color: #a70000;
+  color: var(--border-color);
   margin-bottom: 20px;
 }
+
 .footer-section .contact-info {
-  background-color: #a70000;
+  background-color: var(--border-color);
   color: #fff;
   padding: 20px;
   border-radius: 10px;
 }
+
 .footer-section .contact-info h4 {
   margin-bottom: 20px;
 }
+
 .footer-section a {
-  color: #a70000;
+  color: var(--border-color);
   text-decoration: none;
 }
+
 .footer-section a:hover {
   text-decoration: underline;
 }
+
 .footer-section ul {
   list-style: none;
   padding-left: 0;
 }
+
 .footer-section ul li {
   margin-bottom: 10px;
 }
+
 .footer-section i {
   margin-right: 10px;
 }
@@ -771,11 +771,13 @@ textarea::placeholder {
   }
 }
 
-
-/* pavan chakki */
+/* Footer Background */
 .footer-background-image {
-  background-image: url(../image/bottomBg-1.png); /* Replace with your image path */
+  background-image: url(../image/bottomBg-1.png);
   background-size: cover;
   background-position: center;
   height: 200px; /* Adjust height as needed */
+}
+.custom-border-radius {
+  border-radius: 95px !important;
 }
