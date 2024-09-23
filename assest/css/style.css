@@ -1,10 +1,29 @@
 :root {
-  --primary-color: #b42423; /* Main color */
-  --secondary-color: #dc541c; /* Secondary color */
-  --background-color: #f2f2f2; /* Background color */
-  --text-color: #000; /* Default text color */
-  --border-color: #a70000; /* Border color */
-  --hover-color: rgba(248, 0, 0, 0.75); /* Hover color */
+  --primary-color: #b42423;
+  --secondary-color: #dc541c;
+  --background-color: #f2f2f2;
+  --text-color: #000;
+  --border-color: #a70000;
+  --hover-color: rgba(248, 0, 0, 0.75);
+  --color: #fff;
+  --bg: #495057;
+  --cover-image: rgba(0, 0, 0, 0.5);
+  --background-black: #000;
+  --red-color: #b42423;
+  --hover-orange: rgb(199, 89, 25);
+  --cover-image2: rgba(255, 255, 255, 0.877);
+  --bg-cover: rgba(27, 27, 27, 0.877);
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --border-white: #ffffff;
+  --font-family: "Rubik", sans-serif;
+  --dark-color: #54241C1C;
+  --border-blue: rgb(0, 0, 255);
+  --placeholder: #ffffff;
+  --Bitter: 'Bitter';
+  --cover-image3: rgba(255, 255, 255, 0.5);
+  --white: white;
+  --button-color:black;
+
 }
 
 * {
@@ -12,7 +31,38 @@
   padding: 0;
   list-style: none;
   text-decoration: none !important;
+  text-transform: capitalize;
+  font-family: var(--font-family);
 }
+
+::selection {
+  color: coral;
+  background:teal;
+}
+
+.sidebar {
+  width: 250px;
+  position: fixed; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+  transition: transform 0.3s ease; 
+  transform: translateX(-100%); 
+}
+.navbar-toggler {
+  background-color: var(--button-color); 
+}
+
+
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.bg-dark {
+  background-color: #343a40 !important; 
+}
+
 
 .lubranta-logo {
   max-width: 100px;
@@ -43,8 +93,9 @@
 }
 
 .dropdown-item:hover {
-  color: #fff;
-  background-color: #495057;
+  color: var(--white);
+  background-color: var(--bg);
+
 }
 
 .dropdown-submenu {
@@ -166,7 +217,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--cover-image);
   z-index: -1;
 }
 
@@ -183,13 +234,13 @@ body {
   top: 75%;
   width: 74%;
   display: flex;
-  background: black;
-  color: #fff;
+  background: var(--background-black);
+  color: var(--white);
   right: 0;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: var(--bg) !important;
   padding: 16px !important;
 }
 
@@ -336,12 +387,12 @@ body {
 }
 
 .icon-hover {
-  color: red;
+  color: var(--red-color);
   transition: color 0.3s ease;
 }
 
 .icon-hover:hover {
-  color: orange;
+  color: var(--hover-orange);
 }
 
 .our-main>h2 {
@@ -425,6 +476,7 @@ body {
   height: 100%;
   z-index: -1;
 }
+
 .benifit-product::after {
   content: '';
   position: absolute;
@@ -432,11 +484,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.877);
+  background-color: var(---cover-image2);
   z-index: -1;
 }
 
-.carousel-item>img {
+.slider-item>.carousel.pointer-event>.carousel-inner>.carousel-item>img {
   width: 200px;
   border: 3px solid var(--primary-color);
 }
@@ -447,6 +499,7 @@ body {
   z-index: 1;
   padding-bottom: 150px;
 }
+
 
 .inqury-outer::before {
   content: '';
@@ -468,13 +521,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(27, 27, 27, 0.877);
+  background-color: var(--bg-cover);
   z-index: -1;
 }
 
 .counter-inner {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px var(--box-shadow);
   border-radius: 50px;
 }
 
@@ -545,9 +598,9 @@ body {
 }
 
 .card-ite>.card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-white);
   border-radius: .25rem;
-  box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+  box-shadow: 0 0 .5rem var(--box-shadow);
   display: flex;
   flex-direction: column;
 }
@@ -563,14 +616,13 @@ body {
 
 .elementor-widget-container>h2.elementor-heading-title.elementor-size-default {
   color: #54241C1C;
-  font-family: "Rubik", Sans-serif;
   font-size: 90px;
   font-weight: 900;
 }
 
 .card-ite:hover .hover-effect {
-  top: 190px; 
-  left: 160px !important; 
+  top: 190px;
+  left: 160px !important;
   transform: rotateY(360deg);
   transition: all 0.7s ease-in-out;
 }
@@ -578,9 +630,20 @@ body {
 .hover-effect {
   position: absolute;
   top: -60px;
-  left: -2px; 
-  transition: all 0.7s ease-in-out; 
+  left: -2px;
+  transition: all 0.7s ease-in-out;
 }
+
+@media (max-width: 600px) {
+  .card-ite:hover .hover-effect {
+    top: -60px;
+    left: -2px !important;
+    transform: rotateY(0deg);
+  }
+}
+
+
+
 
 .infobox-icon img {
   padding: 10px;
@@ -599,27 +662,34 @@ body {
   color: var(--text-color);
 }
 
+@media (max-width: 768px) {
+  .row>div:nth-child(2) {
+    border: none !important;
+  }
+}
+
+
 /* Form Styling */
 .form-control {
-  border: none; 
-  border-bottom: 1px solid var(--text-color); 
-  box-shadow: none; 
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  box-shadow: none;
   border-radius: 10px;
 }
 
 .form-control:focus {
-  box-shadow: none; 
-  border-color: #007bff; 
+  box-shadow: none;
+  border-color: var(--border-blue-focus);
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: white;
+  color: var(--white);
   opacity: 0.7;
 }
 
 ::placeholder {
-  color: #ddd !important;
+  color: var(--placeholder-white) !important;
 }
 
 .bg-form {
@@ -652,10 +722,11 @@ textarea::placeholder {
 }
 
 /* Testimonial Styling */
-.testimonial-content footer, .testimonial-content footer>span {
+.testimonial-content footer,
+.testimonial-content footer>span {
   margin-top: 20px;
-  color: #ffffff;
-  font-family: 'Bitter';
+  color: var(--white);
+  font-family: var(--Bitter);
   font-size: 18px;
 }
 
@@ -663,9 +734,9 @@ textarea::placeholder {
 .work-time {
   margin: -1% 10% 0% 10%;
   padding: 4% 0% 2% 0%;
-  background-color: #fff;
+  background-color: var(--background-color);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
 }
 
 /* Footer Section */
@@ -686,7 +757,8 @@ textarea::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent black color */
+  background-color: var(---cover-image2);
+  /* Semi-transparent black color */
   z-index: 1;
 }
 
@@ -703,7 +775,7 @@ textarea::placeholder {
 
 .footer-section .contact-info {
   background-color: var(--border-color);
-  color: #fff;
+  color: var(--white);
   padding: 20px;
   border-radius: 10px;
 }
@@ -713,8 +785,12 @@ textarea::placeholder {
 }
 
 .footer-section a {
-  color: var(--border-color);
+  color: var(--text-color);
   text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: var(--primary-color);
 }
 
 .footer-section a:hover {
@@ -728,6 +804,11 @@ textarea::placeholder {
 
 .footer-section ul li {
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-section ul li:hover {
+  transform: translatex(10px);
 }
 
 .footer-section i {
@@ -740,6 +821,11 @@ textarea::placeholder {
   z-index: 10;
   bottom: 16%;
 }
+
+.work-hours>p>i:hover {
+  color: var(--hover-color) !important;
+}
+
 
 @media (max-width: 760px) {
   .footer-section {
@@ -764,20 +850,57 @@ textarea::placeholder {
 
   .footer-section .contact-info img {
     display: inline-block;
+    transform: rotate(360deg);
   }
 
-  .footer-section p, .footer-section a {
+
+  .footer-section p,
+  .footer-section a {
     font-size: 0.9em;
   }
+
 }
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  .footer-section .contact-info {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .footer-section .contact-info h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-section .contact-info .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-section .contact-info img {
+    margin: 0 10px;
+    width: 40px;
+  }
+
+  .footer-section .contact-info p {
+    margin: 0;
+  }
+}
+
 
 /* Footer Background */
 .footer-background-image {
   background-image: url(../image/bottomBg-1.png);
   background-size: cover;
   background-position: center;
-  height: 200px; /* Adjust height as needed */
+  height: 200px;
+  /* Adjust height as needed */
 }
+
 .custom-border-radius {
   border-radius: 95px !important;
 }

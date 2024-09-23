@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lubranta</title>
+  <title>Home-Lubranta</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assest/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="icon" href="assest/image/favicon-lubranta.png" type="image/x-icon">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -24,12 +24,89 @@
       <a class="navbar-brand d-md-none d-xs-block py-3" href="#">
         <img src="assest/image/lubranta-logo.png" alt="Company Logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+     <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-black" ></span>
       </button>
+      
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body bg-danger">
+          <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                  <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 30px; margin-bottom: 8px;">
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="cateringDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catering
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
+                      <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button" aria-expanded="false">
+                              Lubricating Grease
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
+                              <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
+                              <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
+                              <li><a class="dropdown-item" href="#">Gra Grease</a></li>
+                              <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
+                              <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
+                              <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
+                              <li><a class="dropdown-item" href="#">Wheel</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button" aria-expanded="false">
+                              More Options
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
+                              <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
+                              <li><a class="dropdown-item" href="#">Four Stroke Bike Engine Oil</a></li>
+                              <li><a class="dropdown-item" href="#">Fully Synthetic Car Engine Oil</a></li>
+                              <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button" aria-expanded="false">
+                              More Options
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="nestedDropdown3">
+                              <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
+                              <li><a class="dropdown-item" href="#">Brake Oil-Doc 4 Chain Spray</a></li>
+                              <li><a class="dropdown-item" href="#">Chain Spray</a></li>
+                              <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
+                              <li><a class="dropdown-item" href="#">Coolant-Red</a></li>
+                              <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
+                              <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
+                              <li><a class="dropdown-item" href="#">Power Steering Oil</a></li>
+                              <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Career</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+              </li>
+          </ul>
+      </div>
+  
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" >
         <ul class="navbar-nav mx-auto">
           <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 30px; margin-right: 8px;">
           <li class="nav-item">
@@ -50,6 +127,7 @@
             <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+                data-bs-toggle="dropdown"
                   aria-expanded="false">
                   lubricating Grease
                 </a>
@@ -106,7 +184,32 @@
           </li>
         </ul>
       </div>
-    </div>
+      <div class="sidebar collapse" id="sidebar" aria-labelledby="sidebarHeading">
+        <div class="bg-dark p-3">
+          <h5 class="text-white" id="sidebarHeading">Menu</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Catering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
   </nav>
 
 
@@ -144,10 +247,12 @@
       <div class="row">
         <div class="col-md-7 col-sm-12">
           <div class="lubranta-detail">
-            <h3>LUBRANTA PETROCHEM PRIVATE LIMITED</h3>
-            <p>The world-class performance of LUBRANTA PETROCHEM PRIVATE LIMITED. Products along with its best process
+            <h3 data-aos="zoom-in" data-aos-duration="3000">LUBRANTA PETROCHEM PRIVATE LIMITED</h3>
+            <p data-aos="zoom-in" data-aos-duration="3000">The world-class performance of LUBRANTA PETROCHEM PRIVATE
+              LIMITED. Products along with its best process
               know-how has helped to establish LUBRANTA as the most successful brand.</p>
-            <p>This brand is built on a relationship of quality service and trust that provides the motivation for
+            <p data-aos="zoom-in" data-aos-duration="3000">This brand is built on a relationship of quality service and
+              trust that provides the motivation for
               further
               innovation and technical excellence. A fully equipped company of fine quality lubricating greases and
               specialty oils is strategically located for the emerging markets of India, professionally managed, and
@@ -159,13 +264,16 @@
         <div class="col-md-5 col-sm-12 text-center ">
           <div>
             <img src="assest/image/imag2.jpg" alt="Main Image"
-              class="main-image border border-white shadow-lg p-2  bg-white rounded">
+              class="main-image border border-white shadow-lg p-2  bg-white rounded" data-aos="zoom-in"
+              data-aos-duration="2000">
           </div>
           <div class="image-row-container">
             <img src="assest/image/imag3.jpg" alt="Image 1"
-              class="image-row col-lg-6 col-sm-12 border border-white shadow-lg p-2 mb-5 bg-white rounded">
+              class="image-row col-lg-6 col-sm-12 border border-white shadow-lg p-2 mb-5 bg-white rounded"
+              data-aos="zoom-in" data-aos-duration="2000">
             <img src="assest/image/imag4.jpg" alt="Image 2"
-              class="image-row col-lg-6 col-sm-12 border border-white shadow-lg p-2 mb-5 bg-white rounded">
+              class="image-row col-lg-6 col-sm-12 border border-white shadow-lg p-2 mb-5 bg-white rounded"
+              data-aos="zoom-in" data-aos-duration="2000">
           </div>
         </div>
       </div>
@@ -185,7 +293,7 @@
           <div class="service-item">
             <img src="assest/image/2.jpg"
               class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
-              alt="Service Image">
+              alt="Service Image" data-aos="zoom-out-up" data-aos-duration="3000">
             <div class="d-flex service-icon-main align-items-center">
               <div class="our-service-icon">
                 <img src="assest/image/motor-430x430.png" alt="Motor">
@@ -198,9 +306,9 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
           <div class="service-item">
-            <img src="assest/image/2.jpg"
+            <img src="assest/image/1.webp"
               class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
-              alt="Service Image">
+              alt="Service Image" data-aos="zoom-out-up" data-aos-duration="3000">
             <div class="d-flex service-icon-main align-items-center">
               <div class="our-service-icon">
                 <img src="assest/image/engine-430x430.png" alt="Motor">
@@ -213,9 +321,9 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
           <div class="service-item">
-            <img src="assest/image/2.jpg"
+            <img src="assest/image/3.jpg"
               class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
-              alt="Service Image">
+              alt="Service Image" data-aos="zoom-out-up" data-aos-duration="3000">
             <div class="d-flex service-icon-main align-items-center">
               <div class="our-service-icon">
                 <img src="assest/image/tires-430x430.png" alt="Motor">
@@ -230,8 +338,10 @@
       </div>
 
     </div>
-    <div class="populated"><img src="assest/image/1-2.png" alt="image"></div>
-    <div class="oil-truck"><img src="assest/image/9.png" alt="image"></div>
+    <div class="populated"><img src="assest/image/1-2.png" alt="image" data-aos="zoom-in" data-aos-duration="3000">
+    </div>
+    <div class="oil-truck"><img src="assest/image/9.png" alt="image" data-aos="fade-left" data-aos-duration="3000">
+    </div>
   </div>
 
 
@@ -240,7 +350,8 @@
     <div class="row mb-5">
       <p class="text-center fs-3 fw-bold text-danger">Our Latest Produc</p>
       <div class="text-center">
-        <button type="button" class="btn text-light text-bold  rounded-pill view-more-btn">View More</button>
+        <button type="button" class="btn text-light text-bold  rounded-pill view-more-btn" data-aos="zoom-in-up"
+          data-aos-duration="2000">View More</button>
       </div>
     </div>
   </div>
@@ -252,37 +363,43 @@
       <div class="core-values row justify-content-center pt-3 elementor-background-overlay">
 
         <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2">
+          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <img src="assest/image/certificate-430x430.png" alt="Experience Workers" class="p-2 icon">
           </div>
           <h3 class="elementor-image-box-title text-light fs-5">Experience Workers</h3>
         </div>
         <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2">
+          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <img src="assest/image/quality-1-430x430.png" alt="Quality Guarantee" class="p-2 icon">
           </div>
           <h3 class="elementor-image-box-title text-light fs-5">Quality Guarantee</h3>
         </div>
         <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2">
+          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <img src="assest/image/trust-1-430x430.png" alt="Honesty" class="p-2 icon">
           </div>
           <h3 class="elementor-image-box-title text-light fs-5">Honesty</h3>
         </div>
         <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2">
+          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <img src="assest/image/trust-430x430.png" alt="Customer Focused" class="p-2 icon">
           </div>
           <h3 class="elementor-image-box-title text-light fs-5">Customer Focused</h3>
         </div>
         <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2">
+          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <img src="assest/image/chemical-weapon-430x430.png" alt="No Cynicism" class="p-2 icon">
           </div>
           <h3 class="elementor-image-box-title text-light fs-5">No Cynicism</h3>
         </div>
         <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2">
+          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <img src="assest/image/experience-430x430.png" alt="Knowledge & Experience" class="p-2 icon">
           </div>
           <h3 class="elementor-image-box-title text-light fs-5">Knowledge & Experience</h3>
@@ -295,7 +412,7 @@
     <div class="product-advantage mt-5">
       <div class="container">
         <div class="row p-5">
-          <div class="col-md-6 mb-5 ">
+          <div class="col-xl-6 col-lg-12 col-md-12 mb-5 ">
             <div class="w-75">
               <div
                 class="title-wrapper set-mb-s reset-last-child wd-title-color-primary wd-title-style-default wd-title-size-extra-large text-left">
@@ -330,15 +447,16 @@
                 <span>Suitable for any application</span>
               </li>
             </ul>
-            <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank">
+            <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank" data-aos="zoom-in-up"
+              data-aos-duration="2000">
               Inquiry Now
             </a>
           </div>
 
 
-          <div class="col-md-6">
+          <div class="col-xl-6 col-lg-12 col-md-12">
             <div class="row">
-              <div class="col-12 col-sm-6 mb-3 position-relative p-3">
+              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
                 <div class="border border-4 p-3">
                   <div class="box-info">
                     <div class="info-box-icon me-3 box-detail">01.</div>
@@ -349,11 +467,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;">
+                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                  data-aos-offset="300" data-aos-easing="ease-in-sine">
                   <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
                 </div>
               </div>
-              <div class="col-12 col-sm-6 mb-3 position-relative p-3">
+              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
                 <div class="border border-4 p-3">
                   <div class="box-info">
                     <div class="info-box-icon me-3 box-detail">02.</div>
@@ -363,11 +482,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;">
+                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                  data-aos-offset="300" data-aos-easing="ease-in-sine">
                   <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
                 </div>
               </div>
-              <div class="col-12 col-sm-6 mb-3 position-relative p-3">
+              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
                 <div class="border border-4 p-3">
                   <div class="box-info">
                     <div class="info-box-icon me-3 box-detail">03.</div>
@@ -377,11 +497,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;">
+                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                  data-aos-offset="300" data-aos-easing="ease-in-sine">
                   <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
                 </div>
               </div>
-              <div class="col-12 col-sm-6 mb-3 position-relative p-3">
+              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
                 <div class="border border-4 p-3">
                   <div class="box-info">
                     <div class="info-box-icon me-3 box-detail">04.</div>
@@ -391,7 +512,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;">
+                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                  data-aos-offset="300" data-aos-easing="ease-in-sine">
                   <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
                 </div>
               </div>
@@ -412,11 +534,12 @@
       <li class="product-dd "><a href="">Lubricanting Oil</a></li>
       <li class="product-dd "><a href="">Special Lubricanting</a></li>
     </ul>
-    <div class="oil-container">
+    <div class="oil-container" data-aos="fade-right" data-aos-duration="2000">
       <img src="assest/image/7.png" alt="">
     </div>
     <div class="view-more    text-center">
-      <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank">
+      <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank" data-aos="zoom-in-up"
+        data-aos-duration="2000">
         View More
       </a>
     </div>
@@ -497,7 +620,8 @@
       </div>
     </div>
     <div class="inqury text-center">
-      <a class="btn mt-3 rounded-pill bg-danger text-light" href="" target="_blank">
+      <a class="btn mt-3 rounded-pill bg-danger text-light " data-aos="zoom-in-up" data-aos-duration="2500" href=""
+        target="_blank">
         Inquiry Now
       </a>
 
@@ -512,7 +636,7 @@
                   <img src="assest/image/certificate-430x430.png" alt="No Cynicism" class="p-2 icon">
                 </div>
                 <div class="counter-number">
-                  <h2>43+</h2>
+                  <span class="num fs-5" data-val="43">000</span>+
                   <p class="fs-5 counter-name">Our Product</p>
                 </div>
               </div>
@@ -523,7 +647,7 @@
                   <img src="assest/image/quality-1-430x430.png" alt="No Cynicism" class="p-2 icon">
                 </div>
                 <div class="counter-number">
-                  <h2>30+</h2>
+                  <span class="num fs-5" data-val="33">000</span>+
                   <p class="fs-5 counter-name">Staff Members</p>
                 </div>
               </div>
@@ -534,7 +658,7 @@
                   <img src="assest/image/trust-1-430x430.png" alt="No Cynicism" class="p-2 icon">
                 </div>
                 <div class="counter-number">
-                  <h2>12+</h2>
+                  <span class="num fs-5" data-val="12">000</span>+
                   <p class="fs-5 counter-name">Years of Experience</p>
                 </div>
               </div>
@@ -545,7 +669,7 @@
                   <img src="assest/image/trust-1-430x430.png" alt="No Cynicism" class="p-2 icon">
                 </div>
                 <div class="counter-number">
-                  <h2>1,032+</h2>
+                  <span class="num fs-5" data-val="1032">000</span>+
                   <p class="fs-5 counter-name">Happy Customer</p>
                 </div>
               </div>
@@ -581,7 +705,7 @@
       <div class="row">
         <!-- Product 1 -->
         <div class="col-lg-3 col-md-6 mb-5">
-          <div class="card text-center h-100 position-relative card-ite">
+          <div class="card text-center h-100 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
             <div class="card-image pt-3">
               <img src="assest/image/a1.png" class="card-img-top" alt="Synthetic Lubricant" style="width: 70px;">
             </div>
@@ -596,7 +720,7 @@
         </div>
 
         <!-- Product 2 -->
-        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite">
+        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
           <div class="card text-center h-100">
             <div class="card-image pt-3">
               <img src="assest/image/a2.png" class="card-img-top" alt="Optimal Composition" style="width: 70px;">
@@ -612,7 +736,7 @@
         </div>
 
         <!-- Product 3 -->
-        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite">
+        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
           <div class="card text-center h-100">
             <div class="card-image pt-3">
               <img src="assest/image/step-3.png" class="card-img-top" alt="Sustainably Packaged" style="width: 70px;">
@@ -628,7 +752,7 @@
         </div>
 
         <!-- Product 4 -->
-        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite">
+        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
           <div class="card text-center h-100">
             <div class="card-image pt-3">
               <img src="assest/image/step-4.png" class="card-img-top" alt="Quality Control" style="width: 70px;">
@@ -649,28 +773,28 @@
 
 
 
-  <div class="infobox-outer text-center">
+  <div class="infobox-outer text-center pt-3">
     <div class="container">
       <div class="row">
-        <div class="col   infobox-icon " style="border-right: 1px dashed #000;">
+        <div class="col-6 col-md-3    infobox-icon " style="border-right: 1px dashed #000;">
           <div class="infobox-image"><img src="assest/image/premium-badge-1.png" alt=""></div>
           <div class="infobox-content">
             <h4 class="title text-bold">Excellent Quality</h4>
           </div>
         </div>
-        <div class="col   infobox-icon " style="border-right: 1px dashed #000;">
+        <div class="col-6 col-md-3    infobox-icon " style="border-right: 1px dashed #000;">
           <div class="infobox-image"><img src="assest/image/premium-badge-2.png" alt=""></div>
           <div class="infobox-content">
             <h4 class="title text-bold">Excellent Quality</h4>
           </div>
         </div>
-        <div class="col   infobox-icon " style="border-right: 1px dashed #000;">
+        <div class="col-6 col-md-3    infobox-icon " style="border-right: 1px dashed #000;">
           <div class="infobox-image"><img src="assest/image/premium-badge-3.png" alt=""></div>
           <div class="infobox-content">
             <h4 class="title text-bold">Excellent Quality</h4>
           </div>
         </div>
-        <div class="col   infobox-icon">
+        <div class="col-6 col-md-3    infobox-icon">
           <div class="infobox-image"><img src="assest/image/premium-badge-4.png" alt=""></div>
           <div class="infobox-content">
             <h4 class="title text-bold">Excellent Quality</h4>
@@ -682,89 +806,90 @@
 
   <section class="mt-5">
     <div class="container h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-lg-12 col-xl-11">
-                <div class="text-black bg-form rounded " style="border-radius: 95px;">
-                    <div class="card-body ">
-                        <div class="row justify-content-center">
-                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 text-white">Request A Quote</p>
-                                <form class="mx-1 mx-md-4">
-                                    <div class="form-group mb-4">
-                                        <input type="text" id="form3Example1c" class="form-control bg-transparent text-white border-white"
-                                            placeholder="Enter Your Name" required />
-                                        <div class="invalid-feedback">Please enter your name.</div>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <input type="email" id="form3Example3c"
-                                            class="form-control bg-transparent text-white border-white" placeholder="Enter Your Email"
-                                            required />
-                                        <div class="invalid-feedback">Please enter a valid email.</div>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <input type="tel" id="form3Example4c" class="form-control bg-transparent text-white border-white"
-                                            placeholder="Enter Your Number" required />
-                                        <div class="invalid-feedback">Please enter a Number.</div>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <textarea id="form3Example4cd" class="form-control bg-transparent text-white border-white"
-                                            placeholder="Enter Your Message" required rows="3"></textarea>
-                                        <div class="invalid-feedback">Please enter your message.</div>
-                                    </div>
-
-                                    <div class="d-flex  mx-4 mb-3 mb-lg-4">
-                                        <button type="submit" class="btn  btn-lg fs-5 fw-bold rounded-pill"
-                                            style="background-color: #ffffff; color:#b42423;">Register</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-md-10 col-lg-6 col-xl-7 align-items-center order-1 order-lg-2">
-                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 text-white">Our Happy Customer</p>
-                                <div class="testimonial-avatar text-center">
-                                    <img src="assest/image/User_icon_2.svg-150x150.png" alt="">
-                                </div>
-                                <div class="testimonial-content text-center">
-                                    <div class="testimonial-rating">
-                                        <p class="text-white fs-5"> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic
-                                            or web designs. </p>
-                                    </div>
-                                    <footer>
-                                        <span class="fw-bold fs-4">Orson Lancaster -</span>
-                                        <span>
-                                            Healthcare Social Worker </span>
-                                    </footer>
-                                </div>
-                                <div class="elementor-widget-container mt-3 mb-3">
-                                    <h2 class="text-center"><span class="text-white">Work Hours </span></h2>
-                                </div>
-                                <div class="elementor-widget-container work-time">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-text fs-5 ">Monday - Friday : 09:00AM - 06:00PM</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-text fs-5 ">Saturday : 09:00AM - 05:00PM</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item">
-                                            <span class="elementor-icon-list-text fs-5 ">Sunday and holidays : 09:00AM - 11:00AM</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11">
+          <div class="text-black bg-form rounded " style="border-radius: 95px;">
+            <div class="card-body ">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 text-white">Request A Quote</p>
+                  <form class="mx-1 mx-md-4">
+                    <div class="form-group mb-4">
+                      <input type="text" id="form3Example1c" class="form-control bg-transparent text-white border-white"
+                        placeholder="Enter Your Name" required />
+                      <div class="invalid-feedback">Please enter your name.</div>
                     </div>
+                    <div class="form-group mb-4">
+                      <input type="email" id="form3Example3c"
+                        class="form-control bg-transparent text-white border-white" placeholder="Enter Your Email"
+                        required />
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <input type="tel" id="form3Example4c" class="form-control bg-transparent text-white border-white"
+                        placeholder="Enter Your Number" required />
+                      <div class="invalid-feedback">Please enter a Number.</div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <textarea id="form3Example4cd" class="form-control bg-transparent text-white border-white"
+                        placeholder="Enter Your Message" required rows="3"></textarea>
+                      <div class="invalid-feedback">Please enter your message.</div>
+                    </div>
+
+                    <div class="d-flex  mx-4 mb-3 mb-lg-4">
+                      <button type="submit" class="btn  btn-lg fs-5 fw-bold rounded-pill"
+                        style="background-color: #ffffff; color:#b42423;">Register</button>
+                    </div>
+                  </form>
                 </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 align-items-center order-1 order-lg-2">
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 text-white">Our Happy Customer</p>
+                  <div class="testimonial-avatar text-center">
+                    <img src="assest/image/User_icon_2.svg-150x150.png" alt="">
+                  </div>
+                  <div class="testimonial-content text-center">
+                    <div class="testimonial-rating">
+                      <p class="text-white fs-5"> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                        laying out print, graphic
+                        or web designs. </p>
+                    </div>
+                    <footer>
+                      <span class="fw-bold fs-4">Orson Lancaster -</span>
+                      <span>
+                        Healthcare Social Worker </span>
+                    </footer>
+                  </div>
+                  <div class="elementor-widget-container mt-3 mb-3">
+                    <h2 class="text-center"><span class="text-white">Work Hours </span></h2>
+                  </div>
+                  <div class="elementor-widget-container work-time">
+                    <ul class="elementor-icon-list-items">
+                      <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-text fs-5 ">Monday - Friday : 09:00AM - 06:00PM</span>
+                      </li>
+                      <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-text fs-5 ">Saturday : 09:00AM - 05:00PM</span>
+                      </li>
+                      <li class="elementor-icon-list-item">
+                        <span class="elementor-icon-list-text fs-5 ">Sunday and holidays : 09:00AM - 11:00AM</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
   <div class="sticky-note-outer mt-5">
     <div class="request-sample d-flex flex-column flex-lg-row align-items-center justify-content-center">
       <div class="sticky mb-3 mb-lg-0" style="margin-left: 0;">
-        <img src="assest/image/sticky-note.png" alt="" style="width: 100px;">
+        <img src="assest/image/sticky-note.png " alt="" style="width: 100px;" data-aos="fade-down-right"
+          data-aos-duration="3000">
       </div>
       <div class="sticky-note text-center text-lg-start ms-0 ms-lg-4">
         <h2>REQUEST A SAMPLE</h2>
@@ -773,7 +898,8 @@
       </div>
       <div class="d-flex justify-content-center mx-auto mx-lg-0">
         <button type="submit" class="btn btn-lg fs-5 fw-bold rounded-pill"
-          style="background-color:#dc541c; color:#ffffff; width: 250px; height: 60px;">
+          style="background-color:#dc541c; color:#ffffff; width: 250px; height: 60px;" data-aos="flip-left"
+          data-aos-duration="2000">
           Inquiry Now
         </button>
       </div>
@@ -787,31 +913,32 @@
           <!-- About Lubranta Column -->
           <div class="col-md-3 col-sm-6 col-xs-12">
             <h4 class="column-title">About Lubranta</h4>
-            <p>When bikes or Cars are replaced at the right time, the performance of the bike is maintained and it can increase the overall life of the bike.</p>
+            <p>When bikes or Cars are replaced at the right time, the performance of the bike is maintained and it can
+              increase the overall life of the bike.</p>
           </div>
-          
+
           <!-- Useful Links Column -->
           <div class="col-md-3 col-sm-6 col-xs-12">
             <h4 class="column-title">Useful Links</h4>
             <ul>
-              <li><a href="#"><i class="fas fa-chevron-right"></i>Home</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i>About Us</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i>Product</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i>Catalogue</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i>Career</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right "></i>Home</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right "></i>About Us</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right "></i>Product</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right "></i>Catalogue</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right "></i>Career</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right "></i>Contact Us</a></li>
             </ul>
           </div>
-          
+
           <!-- Work Hours Column -->
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12 work-hours">
             <h4 class="column-title">Work Hours</h4>
-            <p><i class="fas fa-calendar-alt"></i> We work 7 days a week, every day excluding major holidays.</p>
+            <p><i class="fas fa-calendar-alt hh"></i> We work 7 days a week, every day excluding major holidays.</p>
             <p><i class="fas fa-clock"></i> Monday - Friday: 09:00 AM - 06:00 PM</p>
             <p><i class="fas fa-clock"></i> Saturday: 09:00 AM - 05:00 PM</p>
             <p><i class="fas fa-clock"></i> Sunday and Holidays: 09:00 AM - 11:00 AM</p>
           </div>
-  
+
           <!-- Contact Info Column -->
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="contact-info">
@@ -822,10 +949,11 @@
                 </div>
                 <div class="address-info col-9">
                   <p><strong>Address:</strong></p>
-                  <p>286-287, Darshan Industrial Estate Kadodara to Bardoli Highway, Jolwa, Kadodara, Surat, Gujarat 394310</p>
+                  <p>286-287, Darshan Industrial Estate Kadodara to Bardoli Highway, Jolwa, Kadodara, Surat, Gujarat
+                    394310</p>
                 </div>
               </div>
-  
+
               <div class="tel row">
                 <div class="tel-image col-3">
                   <img src="assest/image/telephone-call.png" alt="Phone Icon" style="width: 50px;">
@@ -834,7 +962,7 @@
                   <strong class="d-block">Number:</strong> +91 88 66 90 9393
                 </p>
               </div>
-  
+
               <div class="email row">
                 <div class="email-image col-3">
                   <img src="assest/image/email-1.png" alt="Email Icon" style="width: 50px;">
@@ -844,25 +972,47 @@
             </div>
           </div>
         </div> <!-- End of row -->
-  
+
         <!-- Background Image Section -->
-       
-        
+
+
       </div>
-   
+
     </div>
     <div class="footer-background-image">
-         
+
     </div>
     <div class="elementor-widget-container ">
-      <p class="text-center fs-5 mt-3">© 2022 LUBRANTA PETROCHEM PRIVATE LIMITED | Developed By <a href="https://cfsysinfotech.com/">CFSYS Infotech</a></p>						</div>
+      <p class="text-center fs-5 mt-3">© 2022 LUBRANTA PETROCHEM PRIVATE LIMITED | Developed By <a
+          href="https://cfsysinfotech.com/">CFSYS Infotech</a></p>
+    </div>
   </footer>
-  
+
 
 
 
 
   <!-- js -->
+  <script>
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 4000;
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue == endValue) {
+          clearInterval(counter);
+        }
+      }, duration);
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
