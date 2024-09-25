@@ -1,3 +1,17 @@
+:root {
+    --whatsapp-color: #25D366;
+    --whatsapp-hover-color: #128C7E;
+    --inquiry-bg-color: #dc541c;
+    --inquiry-hover-color: #32241f;
+    --text-white-color: #ffffff;
+    --box-shadow-color: rgba(0, 0, 0, 0.3);
+    --scroll-button-bg: #dc541c;
+    --scroll-button-hover-bg: #32241f;
+    --scroll-button-color: white;
+    --scroll-button-border-radius: 50px;
+    --scroll-button-padding: 15px;
+    --scroll-button-font-size: 20px;
+}
 
 @font-face {
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/TESLA.ttf');
@@ -571,4 +585,71 @@ input[type=radio] {
         height: 85%;
 
     }
+}
+
+
+/* styles.css */
+
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--whatsapp-color);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px var(--box-shadow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+
+.whatsapp-icon>a {
+    color: var(--text-white-color-color);
+    font-size: 34px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-icon:hover {
+    background-color: var(--whatsapp-hover-color);
+}
+
+.inquiry-button {
+    background-color: var(--inquiry-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.inquiry-button:hover {
+    background-color: var(--inquiry-hover-color);
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--scroll-button-bg);
+    color: var(--scroll-button-color);
+    border: none;
+    border-radius: var(--scroll-button-border-radius);
+    padding: var(--scroll-button-padding);
+    cursor: pointer;
+    display: none; 
+    transition: background-color 0.3s ease;
+    font-size: var(--scroll-button-font-size);
+    z-index: 45;
+}
+
+.scroll-button:hover {
+    background-color: var(--scroll-button-hover-bg);
+}
+
+.scroll-button i {
+    margin: 0;
 }
