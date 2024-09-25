@@ -555,9 +555,9 @@ input[type=radio] {
     transition: transform 0s 2.1s;
 }
 
-@media (max-width: 430px) {
+@media  (min-width: 300px) and (max-width: 430px){
     .sliders {
-        height: 29%;
+        height: 23%;
     }
 }
 
