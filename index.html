@@ -8,218 +8,226 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="assest/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assest/css/style.css">
+    <link rel="stylesheet" href="assest/css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="icon" href="assest/image/favicon-lubranta.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 </head>
 
 <body>
   <!-- transforn:translate50 -->
 
 
+  <script src="path-to-the-file/splide.min.js"></script>
+  <script src="splide-4.1.3/dist/js/splide.min.js"></script>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark mb-2">
+      <div class="container">
+        <a class="navbar-brand d-md-none d-xs-block py-3" href="#">
+          <img src="assest/image/lubranta-logo.png" alt="Company Logo">
+        </a>
+        <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-black"></span>
+        </button>
 
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container">
-      <a class="navbar-brand d-md-none d-xs-block py-3" href="#">
-        <img src="assest/image/lubranta-logo.png" alt="Company Logo">
-      </a>
-     <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-black" ></span>
-      </button>
-      
 
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-body bg-danger">
-          <ul class="navbar-nav flex-column">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body bg-danger">
+            <ul class="navbar-nav flex-column">
               <li class="nav-item">
-                  <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 30px; margin-bottom: 8px;">
+                <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 30px; margin-bottom: 8px;">
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="cateringDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catering
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
-                      <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button" aria-expanded="false">
-                              Lubricating Grease
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
-                              <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
-                              <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
-                              <li><a class="dropdown-item" href="#">Gra Grease</a></li>
-                              <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
-                              <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
-                              <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
-                              <li><a class="dropdown-item" href="#">Wheel</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button" aria-expanded="false">
-                              More Options
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
-                              <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
-                              <li><a class="dropdown-item" href="#">Four Stroke Bike Engine Oil</a></li>
-                              <li><a class="dropdown-item" href="#">Fully Synthetic Car Engine Oil</a></li>
-                              <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                          <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button" aria-expanded="false">
-                              More Options
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="nestedDropdown3">
-                              <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
-                              <li><a class="dropdown-item" href="#">Brake Oil-Doc 4 Chain Spray</a></li>
-                              <li><a class="dropdown-item" href="#">Chain Spray</a></li>
-                              <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
-                              <li><a class="dropdown-item" href="#">Coolant-Red</a></li>
-                              <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
-                              <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
-                              <li><a class="dropdown-item" href="#">Power Steering Oil</a></li>
-                              <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Categories</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Career</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-              </li>
-          </ul>
-      </div>
-  
-      </div>
-
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown" >
-        <ul class="navbar-nav mx-auto">
-          <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 30px; margin-right: 8px;">
-          <li class="nav-item">
-            <a class="nav-link mx-2 d-flex align-items-center" aria-current="page" href="#">
-
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#">about us</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mx-2" href="#" id="cateringDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Catering
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
-                data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  lubricating Grease
+                <a class="nav-link dropdown-toggle" href="#" id="cateringDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Catering
                 </a>
-                <ul class="dropdown-menu new" aria-labelledby="nestedDropdown1">
-                  <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
-                  <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
-                  <li><a class="dropdown-item" href="#">Gra Grease</a></li>
-                  <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
-                  <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
-                  <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
-                  <li><a class="dropdown-item" href="#">Wheel </a></li>
+                <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+                      aria-expanded="false">
+                      Lubricating Grease
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
+                      <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Gra Grease</a></li>
+                      <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Wheel</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+                      aria-expanded="false">
+                      More Options
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
+                      <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Four Stroke Bike Engine Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Fully Synthetic Car Engine Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button"
+                      aria-expanded="false">
+                      More Options
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown3">
+                      <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
+                      <li><a class="dropdown-item" href="#">Brake Oil-Doc 4 Chain Spray</a></li>
+                      <li><a class="dropdown-item" href="#">Chain Spray</a></li>
+                      <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
+                      <li><a class="dropdown-item" href="#">Coolant-Red</a></li>
+                      <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
+                      <li><a class="dropdown-item" href="#">Power Steering Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
-                  aria-expanded="false">
-                  More Options
-                </a>
-                <ul class="dropdown-menu new" aria-labelledby="nestedDropdown2">
-                  <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
-                  <li><a class="dropdown-item" href="#">Four Stroke Bike Engine oil</a></li>
-                  <li><a class="dropdown-item" href="#">Fully Synthenic Car Engine Oil</a></li>
-                  <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
               </li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button"
-                  aria-expanded="false">
-                  More Options
-                </a>
-                <ul class="dropdown-menu new" aria-labelledby="nestedDropdown3">
-                  <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
-                  <li><a class="dropdown-item" href="#">Brake Oil-Doc 4Chain Spray</a></li>
-                  <li><a class="dropdown-item" href="#">Chain Spray</a></li>
-                  <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
-                  <li><a class="dropdown-item" href="#">Coolan-Red</a></li>
-                  <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
-                  <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
-                  <li><a class="dropdown-item" href="#">Power Streering Oil</a></li>
-                  <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Careear</a>
-          </li>
+          </div>
 
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#"> Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar collapse" id="sidebar" aria-labelledby="sidebarHeading">
-        <div class="bg-dark p-3">
-          <h5 class="text-white" id="sidebarHeading">Menu</h5>
-          <ul class="nav flex-column">
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 70px; margin-right: 8px;">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link mx-2 d-flex align-items-center" aria-current="page" href="#">
+
+                Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About Us</a>
+              <a class="nav-link mx-2" href="#">about us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-2" href="#" id="cateringDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Catering
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    lubricating Grease
+                  </a>
+                  <ul class="dropdown-menu new" aria-labelledby="nestedDropdown1">
+                    <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Gra Grease</a></li>
+                    <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Wheel </a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+                    aria-expanded="false">
+                    More Options
+                  </a>
+                  <ul class="dropdown-menu new" aria-labelledby="nestedDropdown2">
+                    <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Four Stroke Bike Engine oil</a></li>
+                    <li><a class="dropdown-item" href="#">Fully Synthenic Car Engine Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button"
+                    aria-expanded="false">
+                    More Options
+                  </a>
+                  <ul class="dropdown-menu new" aria-labelledby="nestedDropdown3">
+                    <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
+                    <li><a class="dropdown-item" href="#">Brake Oil-Doc 4Chain Spray</a></li>
+                    <li><a class="dropdown-item" href="#">Chain Spray</a></li>
+                    <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
+                    <li><a class="dropdown-item" href="#">Coolan-Red</a></li>
+                    <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
+                    <li><a class="dropdown-item" href="#">Power Streering Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Catering</a>
+              <a class="nav-link mx-2" href="#">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Categories</a>
+              <a class="nav-link mx-2" href="#">Careear</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Career</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact Us</a>
+              <a class="nav-link mx-2" href="#"> Contact Us</a>
             </li>
           </ul>
         </div>
+        <div class="sidebar collapse" id="sidebar" aria-labelledby="sidebarHeading">
+          <div class="bg-dark p-3">
+            <h5 class="text-white" id="sidebarHeading">Menu</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Catering</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-  </nav>
+    </nav>
+  </header>
 
-
-
-
-
-
-
-
-  <div id="carouselExampleSlidesOnly " class="carousel slide" data-bs-ride="carousel">
+  <!-- <div id="carouselExampleSlidesOnly " class="carousel slide" data-bs-ride="carousel">
 
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -232,26 +240,65 @@
         <img src="assest/image/lubranta img3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <div class="sliders col-sm-12">
+    <input name="control" id="page1" type="radio" checked />
+    <input name="control" id="page2" type="radio" />
+    <input name="control" id="page3" type="radio" />
+    <!-- <input name="control" id="page4" type="radio" /> -->
+
+    <div class="sliders--el sliders--el-1 anim-4parts col-sm-12   ">
+        <div class="sliders--el-bg">
+            <div class="part top left"></div>
+            <div class="part top right"></div>
+            <div class="part bot left"></div>
+            <div class="part bot right"></div>
+        </div>
+
+    </div>
+
+    <div class="sliders--el sliders--el-2 anim-9parts col-sm-12   ">
+        <div class="sliders--el-bg">
+            <div class="part left-top"></div>
+            <div class="part mid-top"></div>
+            <div class="part right-top"></div>
+            <div class="part left-mid"></div>
+            <div class="part mid-mid"></div>
+            <div class="part right-mid"></div>
+            <div class="part left-bot"></div>
+            <div class="part mid-bot"></div>
+            <div class="part right-bot"></div>
+        </div>
+
+    </div>
+
+    <div class="sliders--el sliders--el-3 anim-5parts col-sm-12   ">
+        <div class="sliders--el-bg">
+            <div class="part part-1"></div>
+            <div class="part part-2"></div>
+            <div class="part part-3"></div>
+            <div class="part part-4"></div>
+            <div class="part part-5"></div>
+        </div>
+
+    </div>
+</div>
 
   <div class="lubranta-icon mb-4 mt-4">
     <img src="assest/image/lubranta-logo.png" class="rounded mx-auto d-block" alt="...">
   </div>
-
-  <!-- mb margin bottom 0 to 5 -->
-
-
 
   <div class="lubranta-details">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-sm-12">
           <div class="lubranta-detail">
-            <h3 data-aos="zoom-in" data-aos-duration="3000">LUBRANTA PETROCHEM PRIVATE LIMITED</h3>
-            <p data-aos="zoom-in" data-aos-duration="3000">The world-class performance of LUBRANTA PETROCHEM PRIVATE
+            <h3 class="fs-5"  data-aos="zoom-in" data-aos-duration="1000">LUBRANTA PETROCHEM PRIVATE LIMITED</h3>
+            <p data-aos="zoom-in" data-aos-duration="1000">The world-class performance of LUBRANTA PETROCHEM PRIVATE
               LIMITED. Products along with its best process
               know-how has helped to establish LUBRANTA as the most successful brand.</p>
-            <p data-aos="zoom-in" data-aos-duration="3000">This brand is built on a relationship of quality service and
+            <p data-aos="zoom-in" data-aos-duration="1000">This brand is built on a relationship of quality service and
               trust that provides the motivation for
               further
               innovation and technical excellence. A fully equipped company of fine quality lubricating greases and
@@ -278,399 +325,387 @@
         </div>
       </div>
     </div>
-  </div>
+    <div class="our-services position-relative  pt-3">
+      <div class="container py-5 ">
+        <p class="text-center fs-3 fw-bold text-danger">Our Services</p>
+        <p class="text-center">Lubricant has always been in the forefront developing and marketing of technology
+          advanced
+          lubricants as per the market trends</p>
 
-
-
-  <div class="our-services position-relative">
-    <div class="container py-5 ">
-      <p class="text-center fs-3 fw-bold text-danger">Our Services</p>
-      <p class="text-center">Lubricant has always been in the forefront developing and marketing of technology advanced
-        lubricants as per the market trends</p>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-          <div class="service-item">
-            <img src="assest/image/2.jpg"
-              class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
-              alt="Service Image" data-aos="zoom-out-up" data-aos-duration="3000">
-            <div class="d-flex service-icon-main align-items-center">
-              <div class="our-service-icon">
-                <img src="assest/image/motor-430x430.png" alt="Motor">
-              </div>
-              <div class="elementor-image-box-content">
-                Lubricant Grease
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+            <div class="service-item">
+              <img src="assest/image/2.jpg"
+                class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
+                alt="Service Image" data-aos="zoom-out-up" data-aos-duration="1000">
+              <div class="d-flex service-icon-main align-items-center">
+                <div class="our-service-icon">
+                  <img src="assest/image/motor-430x430.png" alt="Motor">
+                </div>
+                <div class="elementor-image-box-content">
+                  Lubricant Grease
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-          <div class="service-item">
-            <img src="assest/image/1.webp"
-              class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
-              alt="Service Image" data-aos="zoom-out-up" data-aos-duration="3000">
-            <div class="d-flex service-icon-main align-items-center">
-              <div class="our-service-icon">
-                <img src="assest/image/engine-430x430.png" alt="Motor">
-              </div>
-              <div class="elementor-image-box-content">
-                Lubricant Grease
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-          <div class="service-item">
-            <img src="assest/image/3.jpg"
-              class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
-              alt="Service Image" data-aos="zoom-out-up" data-aos-duration="3000">
-            <div class="d-flex service-icon-main align-items-center">
-              <div class="our-service-icon">
-                <img src="assest/image/tires-430x430.png" alt="Motor">
-              </div>
-              <div class="elementor-image-box-content">
-                Lubricant Grease
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+            <div class="service-item">
+              <img src="assest/image/1.webp"
+                class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
+                alt="Service Image" data-aos="zoom-out-up" data-aos-duration="1000">
+              <div class="d-flex service-icon-main align-items-center">
+                <div class="our-service-icon">
+                  <img src="assest/image/engine-430x430.png" alt="Motor">
+                </div>
+                <div class="elementor-image-box-content">
+                  Lubricant Grease
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+            <div class="service-item">
+              <img src="assest/image/3.jpg"
+                class="img-fluid position-relative border border-white shadow-lg p-2 mb-5 bg-white rounded"
+                alt="Service Image" data-aos="zoom-out-up" data-aos-duration="1000">
+              <div class="d-flex service-icon-main align-items-center">
+                <div class="our-service-icon">
+                  <img src="assest/image/tires-430x430.png" alt="Motor">
+                </div>
+                <div class="elementor-image-box-content">
+                  Lubricant Grease
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
-    </div>
-    <div class="populated"><img src="assest/image/1-2.png" alt="image" data-aos="zoom-in" data-aos-duration="3000">
-    </div>
-    <div class="oil-truck"><img src="assest/image/9.png" alt="image" data-aos="fade-left" data-aos-duration="3000">
-    </div>
-  </div>
-
-
-
-  <div class="container">
-    <div class="row mb-5">
-      <p class="text-center fs-3 fw-bold text-danger">Our Latest Produc</p>
-      <div class="text-center">
-        <button type="button" class="btn text-light text-bold  rounded-pill view-more-btn" data-aos="zoom-in-up"
-          data-aos-duration="2000">View More</button>
+      <div class="populated "><img src="assest/image/1-2.png" alt="image" data-aos="zoom-in" data-aos-duration="3000">
+      </div>
+      <div class="oil-truck"><img src="assest/image/9.png" alt="image" data-aos="fade-left" data-aos-duration="3000">
       </div>
     </div>
-  </div>
-  <div class="elementor-background-overlay">
     <div class="container">
-      <h2 class="text-center mb-4 pt-3 text-light">Our Core Values</h2>
-      <p class="text-center mb-4 text-light">We are committed to providing you with a high standard of professional
-        care.</p>
-      <div class="core-values row justify-content-center pt-3 elementor-background-overlay">
-
-        <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-            <img src="assest/image/certificate-430x430.png" alt="Experience Workers" class="p-2 icon">
-          </div>
-          <h3 class="elementor-image-box-title text-light fs-5">Experience Workers</h3>
-        </div>
-        <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-            <img src="assest/image/quality-1-430x430.png" alt="Quality Guarantee" class="p-2 icon">
-          </div>
-          <h3 class="elementor-image-box-title text-light fs-5">Quality Guarantee</h3>
-        </div>
-        <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-            <img src="assest/image/trust-1-430x430.png" alt="Honesty" class="p-2 icon">
-          </div>
-          <h3 class="elementor-image-box-title text-light fs-5">Honesty</h3>
-        </div>
-        <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-            <img src="assest/image/trust-430x430.png" alt="Customer Focused" class="p-2 icon">
-          </div>
-          <h3 class="elementor-image-box-title text-light fs-5">Customer Focused</h3>
-        </div>
-        <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-            <img src="assest/image/chemical-weapon-430x430.png" alt="No Cynicism" class="p-2 icon">
-          </div>
-          <h3 class="elementor-image-box-title text-light fs-5">No Cynicism</h3>
-        </div>
-        <div class="core-value col-6 col-md-4 text-center mb-3">
-          <div class="image-container mb-2" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-            <img src="assest/image/experience-430x430.png" alt="Knowledge & Experience" class="p-2 icon">
-          </div>
-          <h3 class="elementor-image-box-title text-light fs-5">Knowledge & Experience</h3>
+      <div class="row mb-5">
+        <p class="text-center fs-3 fw-bold text-danger">Our Latest Produc</p>
+        <div class="text-center">
+          <button type="button" class="btn text-light text-bold  rounded-pill view-more-btn" data-aos="zoom-in-up"
+            data-aos-duration="2000">View More</button>
         </div>
       </div>
-
     </div>
-  </div>
-  <div class="producy-mainer">
-    <div class="product-advantage mt-5">
+    <div class="elementor-background-overlay">
       <div class="container">
-        <div class="row p-5">
-          <div class="col-xl-6 col-lg-12 col-md-12 mb-5 ">
-            <div class="w-75">
-              <div
-                class="title-wrapper set-mb-s reset-last-child wd-title-color-primary wd-title-style-default wd-title-size-extra-large text-left">
-                <div
-                  class="title-subtitle subtitle-color-primary subtitle-style-default wd-fontsize-m our-advantages-text">
-                  Our advantages
-                </div>
-                <div class="liner-continer">
-                  <h4 class="woodmart-title-container title fs-1">Why do people trust our Product?</h4>
-                </div>
-              </div>
+        <h2 class="text-center mb-4 pt-3 text-light">Our Core Values</h2>
+        <p class="text-center mb-4 text-light">We are committed to providing you with a high standard of professional
+          care.</p>
+        <div class="core-values row justify-content-center pt-3 elementor-background-overlay">
+
+          <div class="core-value col-6 col-md-4 text-center mb-3">
+            <div class="image-container mb-2" >
+              <img src="assest/image/certificate-430x430.png" alt="Experience Workers" class="p-2 icon">
             </div>
-            <p class="our-advantages-paragraph">
-              The world-class performance of LUBRANTA PETROCHEM PRIVATE LIMITED products, along with its best process
-              know-how, has helped establish LUBRANTA as the most successful brand.
-            </p>
-            <ul class="list-unstyled">
-              <li class="d-flex align-items-center mb-2">
-                <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
-                <span>Reduced maintenance costs</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
-                <span>Safer and healthier working conditions</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
-                <span>Environmental improvements</span>
-              </li>
-              <li class="d-flex align-items-center">
-                <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
-                <span>Suitable for any application</span>
-              </li>
-            </ul>
-            <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank" data-aos="zoom-in-up"
-              data-aos-duration="2000">
-              Inquiry Now
-            </a>
+            <h3 class="elementor-image-box-title text-light fs-5">Experience Workers</h3>
           </div>
-
-
-          <div class="col-xl-6 col-lg-12 col-md-12">
-            <div class="row">
-              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
-                <div class="border border-4 p-3">
-                  <div class="box-info">
-                    <div class="info-box-icon me-3 box-detail">01.</div>
-                    <div>
-                      <h4 class="info-box-title">Versatility</h4>
-                      <p>The state or quality of being useful for or easily adapted to various fields of endeavor, etc.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
-                  data-aos-offset="300" data-aos-easing="ease-in-sine">
-                  <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
-                <div class="border border-4 p-3">
-                  <div class="box-info">
-                    <div class="info-box-icon me-3 box-detail">02.</div>
-                    <div>
-                      <h4 class="info-box-title">Durability</h4>
-                      <p>The ability to withstand wear, pressure, or damage.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
-                  data-aos-offset="300" data-aos-easing="ease-in-sine">
-                  <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
-                <div class="border border-4 p-3">
-                  <div class="box-info">
-                    <div class="info-box-icon me-3 box-detail">03.</div>
-                    <div>
-                      <h4 class="info-box-title">Efficiency</h4>
-                      <p>Optimized for minimal waste and maximum output.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
-                  data-aos-offset="300" data-aos-easing="ease-in-sine">
-                  <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
-                <div class="border border-4 p-3">
-                  <div class="box-info">
-                    <div class="info-box-icon me-3 box-detail">04.</div>
-                    <div>
-                      <h4 class="info-box-title">Reliability</h4>
-                      <p>Consistent performance you can depend on.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
-                  data-aos-offset="300" data-aos-easing="ease-in-sine">
-                  <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
-                </div>
-              </div>
+          <div class="core-value col-6 col-md-4 text-center mb-3">
+            <div class="image-container mb-2" >
+              <img src="assest/image/quality-1-430x430.png" alt="Quality Guarantee" class="p-2 icon">
             </div>
+            <h3 class="elementor-image-box-title text-light fs-5">Quality Guarantee</h3>
+          </div>
+          <div class="core-value col-6 col-md-4 text-center mb-3">
+            <div class="image-container mb-2" >
+              <img src="assest/image/trust-1-430x430.png" alt="Honesty" class="p-2 icon">
+            </div>
+            <h3 class="elementor-image-box-title text-light fs-5">Honesty</h3>
+          </div>
+          <div class="core-value col-6 col-md-4 text-center mb-3">
+            <div class="image-container mb-2" >
+              <img src="assest/image/trust-430x430.png" alt="Customer Focused" class="p-2 icon">
+            </div>
+            <h3 class="elementor-image-box-title text-light fs-5">Customer Focused</h3>
+          </div>
+          <div class="core-value col-6 col-md-4 text-center mb-3">
+            <div class="image-container mb-2" >
+              <img src="assest/image/chemical-weapon-430x430.png" alt="No Cynicism" class="p-2 icon">
+            </div>
+            <h3 class="elementor-image-box-title text-light fs-5">No Cynicism</h3>
+          </div>
+          <div class="core-value col-6 col-md-4 text-center mb-3">
+            <div class="image-container mb-2" >
+              <img src="assest/image/experience-430x430.png" alt="Knowledge & Experience" class="p-2 icon">
+            </div>
+            <h3 class="elementor-image-box-title text-light fs-5">Knowledge & Experience</h3>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!--  -->
-  <div class="our-all-product position-relative mb-5">
-    <div class="all-product text-center mb-4 fs-3 our-main">
-      <h2>Our All Product </h2>
-    </div>
-    <ul class="d-flex text-center justify-content-center mb-4">
-      <li class="product-dd active "><a href="">Lubricanting Grease</a></li>
-      <li class="product-dd "><a href="">Lubricanting Oil</a></li>
-      <li class="product-dd "><a href="">Special Lubricanting</a></li>
-    </ul>
-    <div class="oil-container" data-aos="fade-right" data-aos-duration="2000">
-      <img src="assest/image/7.png" alt="">
-    </div>
-    <div class="view-more    text-center">
-      <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank" data-aos="zoom-in-up"
-        data-aos-duration="2000">
-        View More
-      </a>
-    </div>
-  </div>
-  <div class="benifit-product pt-4">
-    <div class="container">
-      <div class="benifite text-center ">
-        <h2>Benefits Of Our Product</h2>
       </div>
-      <div class="benifit-inner d-flex justify-content-center">
+    </div>
+    <div class="producy-mainer">
+      <div class="product-advantage mt-5">
         <div class="container">
-          <div class="row py-4">
-            <div class="col-12 col-md-6">
+          <div class="row p-5">
+            <div class="col-xl-6 col-lg-12 col-md-12 mb-5 ">
+              <div class="w-75">
+                <div
+                  class="title-wrapper set-mb-s reset-last-child wd-title-color-primary wd-title-style-default wd-title-size-extra-large text-left">
+                  <div
+                    class="title-subtitle subtitle-color-primary subtitle-style-default wd-fontsize-m our-advantages-text">
+                    Our advantages
+                  </div>
+                  <div class="liner-continer">
+                    <h4 class="woodmart-title-container title fs-1">Why do people trust our Product?</h4>
+                  </div>
+                </div>
+              </div>
+              <p class="our-advantages-paragraph">
+                The world-class performance of LUBRANTA PETROCHEM PRIVATE LIMITED products, along with its best process
+                know-how, has helped establish LUBRANTA as the most successful brand.
+              </p>
               <ul class="list-unstyled">
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Ensures a longer engine lifespan</span>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
+                  <span>Reduced maintenance costs</span>
                 </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Ensures proper running of the engine</span>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
+                  <span>Safer and healthier working conditions</span>
                 </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Decreases fuel consumption and CO2 emissions</span>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
+                  <span>Environmental improvements</span>
                 </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Developed specially for modern engines</span>
-                </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Maximise engine potential</span>
-                </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Compatible with engine emissions after-treatment systems</span>
-                </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Improved fuel economy</span>
-                </li>
-                <li>
-                  <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
-                  <span>Protection against catastrophic engine failure caused by LSPI</span>
+                <li class="d-flex align-items-center">
+                  <i class="fa-solid fa-oil-can me-2 icon-hover"></i>
+                  <span>Suitable for any application</span>
                 </li>
               </ul>
+              <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank" data-aos="zoom-in-up"
+                data-aos-duration="2000">
+                Inquiry Now
+              </a>
             </div>
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <div class="slider-item">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="assest/image/slider1.png" class="d-block w-100 benifit-image" alt="...">
+
+
+            <div class="col-xl-6 col-lg-12 col-md-12">
+              <div class="row">
+                <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
+                  <div class="border border-4 p-3">
+                    <div class="box-info">
+                      <div class="info-box-icon me-3 box-detail">01.</div>
+                      <div>
+                        <h4 class="info-box-title">Versatility</h4>
+                        <p>The state or quality of being useful for or easily adapted to various fields of endeavor,
+                          etc.
+                        </p>
+                      </div>
                     </div>
-                    <div class="carousel-item">
-                      <img src="assest/image/slider2.jpg" class="d-block w-100 benifit-image" alt="...">
+                  </div>
+                  <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
+                  <div class="border border-4 p-3">
+                    <div class="box-info">
+                      <div class="info-box-icon me-3 box-detail">02.</div>
+                      <div>
+                        <h4 class="info-box-title">Durability</h4>
+                        <p>The ability to withstand wear, pressure, or damage.</p>
+                      </div>
                     </div>
-                    <div class="carousel-item">
-                      <img src="assest/image/slider3.jpg" class="d-block w-100 benifit-image" alt="...">
+                  </div>
+                  <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
+                  <div class="border border-4 p-3">
+                    <div class="box-info">
+                      <div class="info-box-icon me-3 box-detail">03.</div>
+                      <div>
+                        <h4 class="info-box-title">Efficiency</h4>
+                        <p>Optimized for minimal waste and maximum output.</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-lg-6  col-md-12 col-sm-12 mb-3 position-relative p-3">
+                  <div class="border border-4 p-3">
+                    <div class="box-info">
+                      <div class="info-box-icon me-3 box-detail">04.</div>
+                      <div>
+                        <h4 class="info-box-title">Reliability</h4>
+                        <p>Consistent performance you can depend on.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shape-image position-absolute" style="top: 0; left: 0;" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <img src="assest/image/repair-infobox-element.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="inqury-outer position-relative pt-5">
-    <div class="container">
-      <div class="inqury-inner text-center text-light">
-        <h2 class="fs-1 fw-bold">dont't waste your time</h2>
-        <h2 class="pt-3 pb-2">Order Vehical Grease, Oil And Spery Etc..</h2>
-        <p>Lubranta Petrochem Private Limited is provide safe and quality vehical oil, grease and spray etc.</p>
+    <div class="our-all-product position-relative mb-5">
+      <div class="all-product text-center mb-4 fs-3 our-main">
+        <h2>Our All Product </h2>
+      </div>
+      <ul class="d-flex text-center justify-content-center mb-4">
+        <li class="product-dd active "><a href="">Lubricanting Grease</a></li>
+        <li class="product-dd "><a href="">Lubricanting Oil</a></li>
+        <li class="product-dd "><a href="">Special Lubricanting</a></li>
+      </ul>
+      <div class="oil-container" >
+        <img src="assest/image/7.png" alt="" data-aos="fade-right" data-aos-duration="2000">
+      </div>
+      <div class="view-more    text-center">
+        <a class="btn text-light mt-3 rounded-pill bg-danger" href="" target="_blank" data-aos="zoom-in-up"
+          data-aos-duration="1000">
+          View More
+        </a>
       </div>
     </div>
-    <div class="inqury text-center">
-      <a class="btn mt-3 rounded-pill bg-danger text-light " data-aos="zoom-in-up" data-aos-duration="2500" href=""
-        target="_blank">
-        Inquiry Now
-      </a>
-
-    </div>
-    <div class="counter">
+    <div class="benifit-product pt-4">
       <div class="container">
-        <div class="counter-inner p-3">
-          <div class="row">
-            <div class="col-6 col-md-3 ">
-              <div class="core-valued text-center">
-                <div class="image-container mb-2">
-                  <img src="assest/image/certificate-430x430.png" alt="No Cynicism" class="p-2 icon">
+        <div class="benifite text-center ">
+          <h2>Benefits Of Our Product</h2>
+        </div>
+        <div class="benifit-inner d-flex justify-content-center">
+          <div class="container">
+            <div class="row py-4">
+              <div class="col-12 col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Ensures a longer engine lifespan</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Ensures proper running of the engine</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Decreases fuel consumption and CO2 emissions</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Developed specially for modern engines</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Maximise engine potential</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Compatible with engine emissions after-treatment systems</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Improved fuel economy</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-oil-can me-2 icon-hover"></i></span>
+                    <span>Protection against catastrophic engine failure caused by LSPI</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <div class="slider-item">
+                  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner border border-danger">
+                      <div class="carousel-item active">
+                        <img src="assest/image/slider1.png" class="d-block w-100 benifit-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assest/image/slider2.jpg" class="d-block w-100 benifit-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assest/image/slider3.jpg" class="d-block w-100 benifit-image" alt="...">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="counter-number">
-                  <span class="num fs-5" data-val="43">000</span>+
-                  <p class="fs-5 counter-name">Our Product</p>
-                </div>
+
               </div>
             </div>
-            <div class="col-6 col-md-3 ">
-              <div class="core-valued text-center">
-                <div class="image-container mb-2">
-                  <img src="assest/image/quality-1-430x430.png" alt="No Cynicism" class="p-2 icon">
-                </div>
-                <div class="counter-number">
-                  <span class="num fs-5" data-val="33">000</span>+
-                  <p class="fs-5 counter-name">Staff Members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inqury-outer position-relative pt-5">
+      <div class="container">
+        <div class="inqury-inner text-center text-light">
+          <h2 class="fs-1 fw-bold">dont't waste your time</h2>
+          <h2 class="pt-3 pb-2">Order Vehical Grease, Oil And Spery Etc..</h2>
+          <p>Lubranta Petrochem Private Limited is provide safe and quality vehical oil, grease and spray etc.</p>
+        </div>
+      </div>
+      <div class="inqury text-center">
+        <a class="btn mt-3 rounded-pill bg-danger text-light " data-aos="zoom-in-up" data-aos-duration="1000" href=""
+          target="_blank">
+          Inquiry Now
+        </a>
+
+      </div>
+      <div class="counter">
+        <div class="container">
+          <div class="counter-inner p-3">
+            <div class="row">
+              <div class="col-6 col-md-3 ">
+                <div class="core-valued text-center">
+                  <div class="image-container mb-2">
+                    <img src="assest/image/certificate-430x430.png" alt="No Cynicism" class="p-2 icon">
+                  </div>
+                  <div class="counter-number">
+                    <span class="num fs-5 fw-bold" data-val="43">000</span>+
+                    <p class="fs-5 counter-name">Our Product</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-3 ">
-              <div class="core-valued text-center">
-                <div class="image-container mb-2">
-                  <img src="assest/image/trust-1-430x430.png" alt="No Cynicism" class="p-2 icon">
-                </div>
-                <div class="counter-number">
-                  <span class="num fs-5" data-val="12">000</span>+
-                  <p class="fs-5 counter-name">Years of Experience</p>
+              <div class="col-6 col-md-3 ">
+                <div class="core-valued text-center">
+                  <div class="image-container mb-2">
+                    <img src="assest/image/quality-1-430x430.png" alt="No Cynicism" class="p-2 icon">
+                  </div>
+                  <div class="counter-number">
+                    <span class="num fs-5 fw-bold" data-val="33">000</span>+
+                    <p class="fs-5 counter-name">Staff Members</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-3 ">
-              <div class="core-valued text-center">
-                <div class="image-container mb-2">
-                  <img src="assest/image/trust-1-430x430.png" alt="No Cynicism" class="p-2 icon">
+              <div class="col-6 col-md-3 ">
+                <div class="core-valued text-center">
+                  <div class="image-container mb-2">
+                    <img src="assest/image/trust-1-430x430.png" alt="No Cynicism" class="p-2 icon">
+                  </div>
+                  <div class="counter-number">
+                    <span class="num fs-5 fw-bold" data-val="12">000</span>+
+                    <p class="fs-5 counter-name">Years of Experience</p>
+                  </div>
                 </div>
-                <div class="counter-number">
-                  <span class="num fs-5" data-val="1032">000</span>+
-                  <p class="fs-5 counter-name">Happy Customer</p>
+              </div>
+              <div class="col-6 col-md-3 ">
+                <div class="core-valued text-center">
+                  <div class="image-container mb-2">
+                    <img src="assest/image/trust-1-430x430.png" alt="No Cynicism" class="p-2 icon">
+                  </div>
+                  <div class="counter-number">
+                    <span class="num fs-5 fw-bold" data-val="1032">000</span>+
+                    <p class="fs-5 counter-name">Happy Customer</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -678,17 +713,12 @@
         </div>
       </div>
     </div>
-  </div>
-
-
-
 
 
 
   </div>
   <div class="choose-us">
     <div class="container">
-      <!-- Why Choose Us Section -->
       <div class="choose-us-inner-detail text-center">
         <h2>Why Choose Us</h2>
         <p>We also know that you need every part of your world to run smoothly, so we lubricate every part of the car or
@@ -698,14 +728,12 @@
       </div>
     </div>
   </div>
-
-  <!-- Products Section -->
   <section class="py-5 card-mainer">
     <div class="container">
       <div class="row">
         <!-- Product 1 -->
         <div class="col-lg-3 col-md-6 mb-5">
-          <div class="card text-center h-100 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="card text-center h-100 position-relative card-ite" >
             <div class="card-image pt-3">
               <img src="assest/image/a1.png" class="card-img-top" alt="Synthetic Lubricant" style="width: 70px;">
             </div>
@@ -720,7 +748,7 @@
         </div>
 
         <!-- Product 2 -->
-        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" >
           <div class="card text-center h-100">
             <div class="card-image pt-3">
               <img src="assest/image/a2.png" class="card-img-top" alt="Optimal Composition" style="width: 70px;">
@@ -736,7 +764,7 @@
         </div>
 
         <!-- Product 3 -->
-        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" >
           <div class="card text-center h-100">
             <div class="card-image pt-3">
               <img src="assest/image/step-3.png" class="card-img-top" alt="Sustainably Packaged" style="width: 70px;">
@@ -752,7 +780,7 @@
         </div>
 
         <!-- Product 4 -->
-        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-lg-3 col-md-6 mb-5 position-relative card-ite" >
           <div class="card text-center h-100">
             <div class="card-image pt-3">
               <img src="assest/image/step-4.png" class="card-img-top" alt="Quality Control" style="width: 70px;">
@@ -769,10 +797,6 @@
       </div>
     </div>
   </section>
-
-
-
-
   <div class="infobox-outer text-center pt-3">
     <div class="container">
       <div class="row">
@@ -803,7 +827,6 @@
       </div>
     </div>
   </div>
-
   <section class="mt-5">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -844,21 +867,49 @@
                 </div>
                 <div class="col-md-10 col-lg-6 col-xl-7 align-items-center order-1 order-lg-2">
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 text-white">Our Happy Customer</p>
-                  <div class="testimonial-avatar text-center">
-                    <img src="assest/image/User_icon_2.svg-150x150.png" alt="">
-                  </div>
-                  <div class="testimonial-content text-center">
-                    <div class="testimonial-rating">
-                      <p class="text-white fs-5"> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                        laying out print, graphic
-                        or web designs. </p>
+
+                  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="content-avatar text-center">
+                          <div class="testimonial-avatar">
+                            <img src="assest/image/User_icon_2.svg-150x150.png" alt="" class="rounded-circle">
+                          </div>
+                          <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                              <p class="text-white fs-5">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                            </div>
+                            <footer>
+                              <span class="fw-bold fs-4">Orson Lancaster -</span>
+                              <span>Healthcare Social Worker</span>
+                            </footer>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <div class="content-avatar text-center">
+                          <div class="testimonial-avatar">
+                            <img src="assest/image/User_icon_2.svg-150x150.png" alt="" class="rounded-circle">
+                          </div>
+                          <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                              <p class="text-white fs-5">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                            </div>
+                            <footer>
+                              <span class="fw-bold fs-4">Orson Lancaster -</span>
+                              <span>Healthcare Social Worker</span>
+                            </footer>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Add more carousel-item blocks as needed -->
                     </div>
-                    <footer>
-                      <span class="fw-bold fs-4">Orson Lancaster -</span>
-                      <span>
-                        Healthcare Social Worker </span>
-                    </footer>
+                  
+                   
                   </div>
+                  
                   <div class="elementor-widget-container mt-3 mb-3">
                     <h2 class="text-center"><span class="text-white">Work Hours </span></h2>
                   </div>
@@ -883,13 +934,11 @@
       </div>
     </div>
   </section>
-
-
   <div class="sticky-note-outer mt-5">
     <div class="request-sample d-flex flex-column flex-lg-row align-items-center justify-content-center">
       <div class="sticky mb-3 mb-lg-0" style="margin-left: 0;">
         <img src="assest/image/sticky-note.png " alt="" style="width: 100px;" data-aos="fade-down-right"
-          data-aos-duration="3000">
+          data-aos-duration="1000">
       </div>
       <div class="sticky-note text-center text-lg-start ms-0 ms-lg-4">
         <h2>REQUEST A SAMPLE</h2>
@@ -899,26 +948,25 @@
       <div class="d-flex justify-content-center mx-auto mx-lg-0">
         <button type="submit" class="btn btn-lg fs-5 fw-bold rounded-pill"
           style="background-color:#dc541c; color:#ffffff; width: 250px; height: 60px;" data-aos="flip-left"
-          data-aos-duration="2000">
+          data-aos-duration="1000">
           Inquiry Now
         </button>
       </div>
     </div>
   </div>
-
   <footer class="footer-section">
     <div class="container">
       <div class="position-relative">
-        <div class="row">
+        <div class="row justify-content-center">
           <!-- About Lubranta Column -->
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <h4 class="column-title">About Lubranta</h4>
             <p>When bikes or Cars are replaced at the right time, the performance of the bike is maintained and it can
               increase the overall life of the bike.</p>
           </div>
 
           <!-- Useful Links Column -->
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <h4 class="column-title">Useful Links</h4>
             <ul>
               <li><a href="#"><i class="fas fa-chevron-right "></i>Home</a></li>
@@ -931,7 +979,7 @@
           </div>
 
           <!-- Work Hours Column -->
-          <div class="col-md-3 col-sm-6 col-xs-12 work-hours">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 work-hours">
             <h4 class="column-title">Work Hours</h4>
             <p><i class="fas fa-calendar-alt hh"></i> We work 7 days a week, every day excluding major holidays.</p>
             <p><i class="fas fa-clock"></i> Monday - Friday: 09:00 AM - 06:00 PM</p>
@@ -940,7 +988,7 @@
           </div>
 
           <!-- Contact Info Column -->
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="contact-info">
               <h4>Get In Touch</h4>
               <div class="address row">
@@ -954,7 +1002,7 @@
                 </div>
               </div>
 
-              <div class="tel row">
+              <div class="tel row mb-2">
                 <div class="tel-image col-3">
                   <img src="assest/image/telephone-call.png" alt="Phone Icon" style="width: 50px;">
                 </div>
@@ -1020,7 +1068,41 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const controls = document.querySelectorAll('.sliders--control label');
+      let currentSlide = 1; // Start with the first slide
+      const totalSlides = 3; // Total number of slides
+      let autoSlideInterval;
 
+      // Function to change slide
+      const changeSlide = (next) => {
+        document.getElementById(`page${next}`).checked = true;
+        currentSlide = next;
+      };
+
+      // Auto slide function
+      const startAutoSlide = () => {
+        autoSlideInterval = setInterval(() => {
+          const nextSlide = (currentSlide % totalSlides) + 1; // Loop back to the first slide
+          changeSlide(nextSlide);
+        }, 5000); // Change slide every 5 seconds
+      };
+
+      // Event listeners for controls
+      controls.forEach(control => {
+        control.addEventListener('click', () => {
+          clearInterval(autoSlideInterval); // Stop auto sliding on user interaction
+          const next = control.getAttribute('for');
+          currentSlide = parseInt(next.replace('page', ''));
+          changeSlide(currentSlide); // Change to the clicked slide
+          startAutoSlide(); // Restart auto sliding
+        });
+      });
+
+      startAutoSlide(); // Start auto sliding
+    });
+  </script>
 
 </body>
 
