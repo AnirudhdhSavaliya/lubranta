@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assest/css/style.css">
+  <link rel="stylesheet" href="assest/css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="icon" href="assest/image/favicon-lubranta.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark pb-2">
+      <div class="container">
+        <a class="navbar-brand d-md-none d-xs-block py-3" href="#">
+          <img src="assest/image/lubranta-logo.png" alt="Company Logo">
+        </a>
+        <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-black"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body bg-infor">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 50px; margin-bottom: 8px;">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About Us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cateringDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+                      aria-expanded="false">
+                      Lubricating Grease
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown1">
+                      <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Gra Grease</a></li>
+                      <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
+                      <li><a class="dropdown-item" href="#">Wheel</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+                      aria-expanded="false">
+                      More Options
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown2">
+                      <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Four Stroke Bike Engine Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Fully Synthetic Car Engine Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button"
+                      aria-expanded="false">
+                      More Options
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nestedDropdown3">
+                      <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
+                      <li><a class="dropdown-item" href="#">Brake Oil-Doc 4 Chain Spray</a></li>
+                      <li><a class="dropdown-item" href="#">Chain Spray</a></li>
+                      <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
+                      <li><a class="dropdown-item" href="#">Coolant-Red</a></li>
+                      <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
+                      <li><a class="dropdown-item" href="#">Power Steering Oil</a></li>
+                      <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="career.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact Us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <img src="assest/image/lubranta-logo.png" alt="Logo" style="height: 70px; margin-right: 8px;">
+            <li class="nav-item">
+              <a class="nav-link mx-2 d-flex align-items-center" aria-current="page" href="index.html">
+
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="About Us.html">about us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-2" href="#" id="cateringDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="cateringDropdown">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown1" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    lubricating Grease
+                  </a>
+                  <ul class="dropdown-menu new" aria-labelledby="nestedDropdown1">
+                    <li><a class="dropdown-item" href="#">All Purpose Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Chassis Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Gra Grease</a></li>
+                    <li><a class="dropdown-item" href="#">High Temperature Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Multi Purpose Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Redgel Grease</a></li>
+                    <li><a class="dropdown-item" href="#">Wheel </a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown2" role="button"
+                    aria-expanded="false">
+                    More Options
+                  </a>
+                  <ul class="dropdown-menu new" aria-labelledby="nestedDropdown2">
+                    <li><a class="dropdown-item" href="#">Bus/Car/Truck Engine Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Four Stroke Bike Engine oil</a></li>
+                    <li><a class="dropdown-item" href="#">Fully Synthenic Car Engine Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Gear And Hydraulic Oil</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown3" role="button"
+                    aria-expanded="false">
+                    More Options
+                  </a>
+                  <ul class="dropdown-menu new" aria-labelledby="nestedDropdown3">
+                    <li><a class="dropdown-item" href="#">Brake Oil-Doc 3</a></li>
+                    <li><a class="dropdown-item" href="#">Brake Oil-Doc 4Chain Spray</a></li>
+                    <li><a class="dropdown-item" href="#">Chain Spray</a></li>
+                    <li><a class="dropdown-item" href="#">Coolant-Green</a></li>
+                    <li><a class="dropdown-item" href="#">Coolan-Red</a></li>
+                    <li><a class="dropdown-item" href="#">Front Fork Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Multi Cleaner Spray</a></li>
+                    <li><a class="dropdown-item" href="#">Power Streering Oil</a></li>
+                    <li><a class="dropdown-item" href="#">Rust Cleaner Spray</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="career.html">Careear</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="Contact Us.html"> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar collapse" id="sidebar" aria-labelledby="sidebarHeading">
+          <div class="bg-dark p-3">
+            <h5 class="text-white" id="sidebarHeading">Menu</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="About Us.html">About Us</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link text-white" href="">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="career.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Contact Us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <!-- background image -->
+  <div class="page-name-outer">
+    <div class="page-name-outer d-flex align-items-center justify-content-center text-center">
+      <h2 class="elementor-heading-title">About Us</h2>
+    </div>
+
+  </div>
+  <!-- background image over-->
+  <!-- lubranta meaning -->
+  <div class="sentence-meaning-outer">
+    <div class="container">
+      <div class="sentence text-center pt-5">
+        <h2 ><span class="color-animation" data-text="Welcome To Lubranta">Welcome To Lubranta </span></h2>
+      </div>
+      <div class="elementor-widget text-center">
+        <p>Lubranta has a reputation for launching regular product and technology upgrades. Now all its
+          activities will go under the umbrella of The Green Performer.The Meaning Of Lubranta is:</p>
+      </div>
+      <div class="lubranta-detail-outer pb-5">
+        <div class="lubranta-detail-inner d-flex justify-content-center">
+          <ul class="te">
+            <li class="d-flex align-items-center"><span style="background-color: #54241c; text-align: center;">L</span>
+              <div class="meaner">ubricant As Per International Standard</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #b42423; text-align: center;">U</span>
+              <div class="meaner">nbelievable Opportunity</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #54241c; text-align: center;">B</span>
+              <div class="meaner">est Performance In Segment</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #b42423; text-align: center;">R</span>
+              <div class="meaner">ecommended By Every Automobile Lover</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #54241c; text-align: center;">A</span>
+              <div class="meaner">utomotive & Industrial</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #b42423; text-align: center;">N</span>
+              <div class="meaner">ature Your Engine With Us</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #54241c; text-align: center;">T</span>
+              <div class="meaner">rusted Lubricant In Market Place</div>
+            </li>
+            <li class="d-flex align-items-center"><span style="background-color: #b42423; text-align: center;">A</span>
+              <div class="meaner">vailable In Different Pack</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="jurney-product-outer">
+    <div class="container">
+      <div class="jurney-product-inner pt-5 pb-5">
+        <div class="jurney d-flex flex-column flex-md-row justify-content-center gap-5 text-center">
+          <div class="card" style="width: 100%;">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold pb-4 fs-2" data-text="Our Mission">Our Mission</h5>
+              <div class="card-image-outer">
+                <div class="card-image mb-5">
+                  <img src="assest/image/computer.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <p class="card-text">To provide quality products at a price that reflects true value along
+                with unparalleled support services by highly trained and well motivated work force
+                meeting customer expectations and requirements.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold pb-4 fs-2" data-text="Our Vision">Our Vision</h5>
+              <div class="card-image-outer">
+                <div class="card-image mb-5">
+                  <img src="assest/image/eyer.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <p class="card-text">To be the foremost Indian Lubricant Manufacturing Company most admired
+                for its quality products, reliable performance and best services with a perspective of
+                global excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- lubranta meaning  over-->
+  <!-- servbice-outer -->
+
+  <div class="service-outer">
+    <div class="container">
+      <div class="service-inner pt-5 pb-5">
+        <div class="service text-center">
+          <h5 class="text-style pb-4" data-text="Our Value And People">Our Value And People</h5>
+          <div class="element-img d-flex justify-content-center">
+            <div class="elementor-image-box-wrapper mb-5">
+              <img src="assest/image/hero.png" alt="image">
+            </div>
+          </div>
+          <p>Our commitment to render services to our customers and the society at large always reminds us to
+            uphold our own principles and have a continual improvement towards attaining this vision.
+            Accordingly, we believe in:</p>
+        </div>
+      </div>
+      <div class="services d-flex flex-column flex-lg-row text-center justify-content-center mb-5">
+        <div class="inner-services">
+          <div class="inner-services-image">
+            <img src="assest/image/setting.png" alt="Settings">
+          </div>
+          <div class="inner-services-detail">Professionalism in our approach.</div>
+        </div>
+        <div class="inner-services">
+          <div class="inner-services-image">
+            <img src="assest/image/guaranteed-430x430.png" alt="Guaranteed">
+          </div>
+          <div class="inner-services-detail">Dedication for quality and excellence.</div>
+        </div>
+        <div class="inner-services">
+          <div class="inner-services-image">
+            <img src="assest/image/repair-tool-430x430.png" alt="Repair Tool">
+          </div>
+          <div class="inner-services-detail">Enthusiastic customer service.</div>
+        </div>
+      </div>
+      <p class="text-center">Our commitment to render services to our customers and the society at large always reminds
+        us to
+        uphold our own principles and have a continual improvement towards attaining this vision.
+        Accordingly, we believe in:</p>
+    </div>
+  </div>
+    <!-- servbice-outer OVER-->
+    <div class="inquiry-outer">
+      <div class="container">
+        <div
+          class="inquiry d-flex w-100 flex-lg-row flex-column justify-content-center align-items-center text-center pt-3">
+          <div class="inqury-title w-75 ">
+            <h2 class="text-light">We Provide Innovative Solutions For Sustainable Progress. Our Team Works To Increase
+              Productivity On The
+              Market.</h2>
+          </div>
+          <div class="inquiry-button w-25">
+            <a class="button button-5">Gradient Slide Up</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="trust-section mt-5 ">
+      <div class="container">
+        <div class="trust-list d-flex flex-column flex-lg-row text-center justify-content-center mb-5">
+          <div class="trust-item">
+            <div class="trust-image">
+              <img src="assest/image/solidarity-430x430.png" alt="Trustworthy Service">
+            </div>
+            <div class="trust-item-detail"><h3>Health</h3></div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-image">
+              <img src="assest/image/shield-430x430.png" alt="Reliable Quality">
+            </div>
+            <div class="trust-item-detail"><h3>Safety</h3></div>
+          </div>
+          
+          <div class="trust-item">
+            <div class="trust-image">
+              <img src="assest/image/sustainable-430x430.png" alt="Customer Care">
+              
+            </div>
+            <div class="trust-item-detail"><h3>Environment</h3></div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-image">
+              <img src="assest/image/quality-1-430x430.png" alt="Secure Transactions">
+            </div>
+            <div class="trust-item-detail"><h3>Quality</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="trust-description">Secure and safe transactions for peace of mind.</div> -->
+    <!-- footer start -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="position-relative">
+          <div class="row justify-content-center">
+            <!-- About Lubranta Column -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <h4 class="column-title" data-text="About Lubranta">About Lubranta</h4>
+              <p>When bikes or Cars are replaced at the right time, the performance of the bike is maintained and it can
+                increase the overall life of the bike.</p>
+            </div>
+  
+            <!-- Useful Links Column -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <h4 class="column-title" data-text="Useful Links">Useful Links</h4>
+              <ul>
+                <li><a href="#"><i class="fas fa-chevron-right "></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right "></i>About Us</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right "></i>Product</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right "></i>Catalogue</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right "></i>Career</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right "></i>Contact Us</a></li>
+              </ul>
+            </div>
+  
+            <!-- Work Hours Column -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 work-hours">
+              <h4 class="column-title" data-text="Work Hours">Work Hours</h4>
+              <p><i class="fas fa-calendar-alt hh"></i> We work 7 days a week, every day excluding major holidays.</p>
+              <p><i class="fas fa-clock"></i> Monday - Friday: 09:00 AM - 06:00 PM</p>
+              <p><i class="fas fa-clock"></i> Saturday: 09:00 AM - 05:00 PM</p>
+              <p><i class="fas fa-clock"></i> Sunday and Holidays: 09:00 AM - 11:00 AM</p>
+            </div>
+  
+            <!-- Contact Info Column -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+              <div class="contact-info">
+                <h4 class="color-anime" data-text="Get In Touch">Get In Touch</h4>
+                <div class="address row">
+                  <div class="address-image col-3">
+                    <img src="assest/image/location.png" alt="Location Icon" style="width: 50px;">
+                  </div>
+                  <div class="address-info col-9">
+                    <p><strong>Address:</strong></p>
+                    <p>286-287, Darshan Industrial Estate Kadodara to Bardoli Highway, Jolwa, Kadodara, Surat, Gujarat
+                      394310</p>
+                  </div>
+                </div>
+  
+                <div class="tel row mb-2">
+                  <div class="tel-image col-3">
+                    <img src="assest/image/telephone-call.png" alt="Phone Icon" style="width: 50px;">
+                  </div>
+                  <p class="col-9">
+                    <strong class="d-block">Number:</strong>
+                    <a href="tel:+918866909393" class="text-light">+91 88 66 90 9393</a>
+                  </p>
+  
+                </div>
+  
+                <div class="email row">
+                  <div class="email-image col-3">
+                    <img src="assest/image/email-1.png" alt="Email Icon" style="width: 50px;">
+                  </div>
+                  <p class="col-9">
+                    <strong class="d-block">Email:</strong>
+                    <a href="mailto:info@lubranta.com" class="text-light">info@lubranta.com</a>
+                  </p>
+  
+                </div>
+              </div>
+            </div>
+          </div> <!-- End of row -->
+  
+          <!-- Background Image Section -->
+  
+  
+        </div>
+  
+      </div>
+      <div class="footer-background-image">
+  
+      </div>
+      <div class="elementor-widget-container ">
+        <p class="text-center fs-5 mt-3">© 2022 LUBRANTA PETROCHEM PRIVATE LIMITED | Developed By <a
+            href="https://cfsysinfotech.com/">CFSYS Infotech</a></p>
+      </div>
+    </footer>
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/9687768933?text=How%20can%20I%20help%20you?" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <button id="scrollToTop" class="scroll-button">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- footer end -->
+    <script></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+
+</html>
