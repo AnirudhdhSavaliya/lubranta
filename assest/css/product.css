@@ -1,0 +1,33 @@
+/* slider start */
+.carousel-indicators button {
+    border-radius: 50% !important; 
+    width: 15px !important; 
+    height: 15px !important; 
+    background-color: #000 !important; 
+    border: none !important;
+}
+
+.carousel-indicators .active {
+    background-color: #fff !important; 
+}
+
+/* slider end */
+/* product-slider */
+.card-img-top {
+	width: 90px;
+}
+.card-body>.btn {
+    background-color:#b42423;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 10px;
+}
+.first-title {
+	background-color: #b42423;
+	color: #fff;
+	transform: skewY(-30deg);
+	width: 72px;
+	height: 55px;
+}
+/* product-slider over */
+
