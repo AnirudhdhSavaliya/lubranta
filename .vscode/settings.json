@@ -57,6 +57,12 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "13-6.C": "cpp"
+    "13-6.C": "cpp",
+    "13_4.C": "cpp",
+    "13_5.C": "cpp",
+    "13_7.C": "cpp",
+    "7_1.C": "cpp",
+    "13_8.C": "cpp",
+    "13_6.C": "cpp"
   }
 }

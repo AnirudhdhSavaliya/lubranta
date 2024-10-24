@@ -23,6 +23,8 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
 
 </head>
 
@@ -227,6 +229,10 @@
                         </ul>
                     </div>
                 </div>
+                   <div class="shoping-cart ">
+               
+                    <a href="#" class="text-dark"> <i class="bi bi-cart"></i></a>
+                   </div>
             </div>
 
         </nav>
@@ -411,7 +417,7 @@
         <div class="container">
             <div class="row pt-5 pb-5 text-center">
                 <!-- Product 1 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-1-removebg-preview.png" class="card-img-top" alt="...">
@@ -419,15 +425,94 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-1">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-1"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-1" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-share"></i>Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -436,16 +521,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹340</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹340</span>
                                                     <span>₹300</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -465,7 +553,7 @@
                     </div>
                 </div>
                 <!-- Product 2 -->
-                <div class="col-md-3">
+                <div class="col-md-3  col-sm-6 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-3-Photoroom.png" class="card-img-top" alt="...">
@@ -473,15 +561,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-2">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-2"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-2" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-3-Photoroom.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -490,16 +656,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹340</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹340</span>
                                                     <span>₹300</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -519,7 +688,7 @@
                     </div>
                 </div>
                 <!-- Product 3 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-2-removebg-preview.png" class="card-img-top" alt="...">
@@ -527,15 +696,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-3">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-3"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-3" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-2-removebg-preview.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -544,16 +791,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹480</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹480</span>
                                                     <span>₹375</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -573,7 +823,7 @@
                     </div>
                 </div>
                 <!-- Product 4 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-4-removebg-preview.png" class="card-img-top" alt="...">
@@ -581,15 +831,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-4">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-4"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-4" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-4-removebg-preview.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -598,16 +926,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹450</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹450</span>
                                                     <span>₹370</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -629,12 +960,12 @@
             </div>
         </div>
     </div>
-    
+
     <div class="product-slider">
         <div class="container">
             <div class="row pt-5 pb-5 text-center">
                 <!-- Product 1 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-6.png" class="card-img-top" alt="...">
@@ -642,15 +973,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modalProduct1     ">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-5"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-5" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-6.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modalProduct1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modalProduct1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -659,16 +1068,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹3400</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹3400</span>
                                                     <span>₹3000</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -688,7 +1100,7 @@
                     </div>
                 </div>
                 <!-- Product 2 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-9.png" class="card-img-top" alt="...">
@@ -696,15 +1108,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modalProduct2">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-6"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-6" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-9.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-share"></i>Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modalProduct2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modalProduct2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -713,16 +1203,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹4100</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹4100</span>
                                                     <span>₹3859</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
@@ -742,7 +1235,7 @@
                     </div>
                 </div>
                 <!-- Product 3 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-7.png" class="card-img-top" alt="...">
@@ -750,15 +1243,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modalProduct3">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-7"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-7" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-7.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-share"></i>Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modalProduct3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modalProduct3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -767,16 +1338,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹3409</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹3409</span>
                                                     <span>₹3000</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -796,7 +1370,7 @@
                     </div>
                 </div>
                 <!-- Product 4 -->
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center mb-5" style="width: 100%;">
                         <div class="product-image">
                             <img src="assest/image/product-8.png" class="card-img-top" alt="...">
@@ -804,15 +1378,93 @@
                                 <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modalProduct4">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-8"><i
+                                        class="fa-solid fa-eye"></i></a>
                             </div>
+                            <div class="modal fade" id="modal-a-8" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/product-8.png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Modal -->
-                            <div class="modal fade" id="modalProduct4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modalProduct4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="exampleModalLabel">Lubranta 20W40 Heavy Duty
+                                                Engine Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="cart-item-outer">
@@ -821,16 +1473,19 @@
                                                 </div>
                                                 <div class="cart-item-detail mt-3 mb-3">
                                                     <p class="cart-item-name">Lubranta</p>
-                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
                                                 </div>
                                                 <div class="cart-item-price">
-                                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹4000</span>
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹4000</span>
                                                     <span>₹3750</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">add to cart</button>
                                         </div>
                                     </div>
@@ -852,222 +1507,550 @@
             </div>
         </div>
     </div>
-    
-        <div class="product-slider">
-            <div class="container">
-                <div class="row pt-5 pb-5 text-center">
-                    <!-- Product 1 -->
-                    <div class="col-md-3">
-                        <div class="text-center mb-5" style="width: 100%;">
-                            <div class="product-image">
-                                <img src="assest/image/p1 (1).png" class="card-img-top" alt="...">
-                                <div class="shopping-icon">
-                                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-8"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalLabel1">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="cart-item-outer">
-                                                    <div class="cart-item-image">
-                                                        <img src="assest/image/p1 (1).png" alt="">
+
+    <div class="product-slider">
+        <div class="container">
+            <div class="row pt-5 pb-5 text-center">
+                <!-- Product 1 -->
+                <div class="col-md-3 col-6">
+                    <div class="text-center mb-5" style="width: 100%;">
+                        <div class="product-image">
+                            <img src="assest/image/p1 (1).png" class="card-img-top" alt="...">
+                            <div class="shopping-icon">
+                                <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-8"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-9"><i
+                                        class="fa-solid fa-eye"></i></a>
+                            </div>
+                            <div class="modal fade" id="modal-a-9" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/p1 (1).png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
                                                     </div>
-                                                    <div class="cart-item-detail mt-3 mb-3">
-                                                        <p class="cart-item-name">Lubranta</p>
-                                                        <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                                    </div>
-                                                    <div class="cart-item-price">
-                                                        <span class="text-decoration-line-through" style="padding-right: 5px;">₹6800</span>
-                                                        <span>₹5060</span>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
                                             </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                <div class="card-title">
-                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹6800</span>
-                                    <span>₹5060</span>
-                                </div>
-                                <div class="button-primary">
-                                    <a class="button button-11" href="#">Add To Cart</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="modalLabel1"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel1">Lubranta 20W40 Heavy Duty Engine
+                                                Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="cart-item-outer">
+                                                <div class="cart-item-image">
+                                                    <img src="assest/image/p1 (1).png" alt="">
+                                                </div>
+                                                <div class="cart-item-detail mt-3 mb-3">
+                                                    <p class="cart-item-name">Lubranta</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
+                                                </div>
+                                                <div class="cart-item-price">
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹6800</span>
+                                                    <span>₹5060</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Product 2 -->
-                    <div class="col-md-3">
-                        <div class="text-center mb-5" style="width: 100%;">
-                            <div class="product-image">
-                                <img src="assest/image/p1 (2).png" class="card-img-top" alt="...">
-                                <div class="shopping-icon">
-                                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-9"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalLabel2">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="cart-item-outer">
-                                                    <div class="cart-item-image">
-                                                        <img src="assest/image/p1 (2).png" alt="">
-                                                    </div>
-                                                    <div class="cart-item-detail mt-3 mb-3">
-                                                        <p class="cart-item-name">Lubranta</p>
-                                                        <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                                    </div>
-                                                    <div class="cart-item-price">
-                                                        <span class="text-decoration-line-through" style="padding-right: 5px;">₹6000</span>
-                                                        <span>₹5500</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Add To Cart</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="card-body">
+                            <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                            <div class="card-title">
+                                <span class="text-decoration-line-through" style="padding-right: 5px;">₹6800</span>
+                                <span>₹5060</span>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                <div class="card-title">
-                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹5040</span>
-                                    <span>₹4950</span>
-                                </div>
-                                <div class="button-primary">
-                                    <a class="button button-11">Add To Cart</a>
-                                </div>
+                            <div class="button-primary">
+                                <a class="button button-11" href="#">Add To Cart</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Product 3 -->
-                    <div class="col-md-3">
-                        <div class="text-center mb-5" style="width: 100%;">
-                            <div class="product-image">
-                                <img src="assest/image/p1 (3).png" class="card-img-top" alt="...">
-                                <div class="shopping-icon">
-                                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-10"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="modal-10" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalLabel3">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="cart-item-outer">
-                                                    <div class="cart-item-image">
-                                                        <img src="assest/image/p1 (3).png" alt="">
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3 col-6">
+                    <div class="text-center mb-5" style="width: 100%;">
+                        <div class="product-image">
+                            <img src="assest/image/p1 (2).png" class="card-img-top" alt="...">
+                            <div class="shopping-icon">
+                                <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-9"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-10"><i
+                                        class="fa-solid fa-eye"></i></a>
+                            </div>
+                            <div class="modal fade" id="modal-a-10" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/p1 (2).png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
                                                     </div>
-                                                    <div class="cart-item-detail mt-3 mb-3">
-                                                        <p class="cart-item-name">Lubranta</p>
-                                                        <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                                    </div>
-                                                    <div class="cart-item-price">
-                                                        <span class="text-decoration-line-through" style="padding-right: 5px;">₹5500</span>
-                                                        <span>₹5200</span>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-share"></i>Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
                                             </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                <div class="card-title">
-                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹5500</span>
-                                    <span>₹5200</span>
-                                </div>
-                                <div class="button-primary">
-                                    <a class="button button-11">Add To Cart</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="modalLabel2"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel2">Lubranta 20W40 Heavy Duty Engine
+                                                Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="cart-item-outer">
+                                                <div class="cart-item-image">
+                                                    <img src="assest/image/p1 (2).png" alt="">
+                                                </div>
+                                                <div class="cart-item-detail mt-3 mb-3">
+                                                    <p class="cart-item-name">Lubranta</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
+                                                </div>
+                                                <div class="cart-item-price">
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹6000</span>
+                                                    <span>₹5500</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="card-body">
+                            <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                            <div class="card-title">
+                                <span class="text-decoration-line-through" style="padding-right: 5px;">₹5040</span>
+                                <span>₹4950</span>
+                            </div>
+                            <div class="button-primary">
+                                <a class="button button-11">Add To Cart</a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Product 4 -->
-                    <div class="col-md-3">
-                        <div class="text-center mb-5" style="width: 100%;">
-                            <div class="product-image">
-                                <img src="assest/image/p1 (4).png" class="card-img-top" alt="...">
-                                <div class="shopping-icon">
-                                    <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-11"><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                </div>
-                                <!-- Modal -->
-                                <div class="modal fade" id="modal-11" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalLabel4">Lubranta 20W40 Heavy Duty Engine Oil</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="cart-item-outer">
-                                                    <div class="cart-item-image">
-                                                        <img src="assest/image/p1 (4).png" alt="">
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3 col-6">
+                    <div class="text-center mb-5" style="width: 100%;">
+                        <div class="product-image">
+                            <img src="assest/image/p1 (3).png" class="card-img-top" alt="...">
+                            <div class="shopping-icon">
+                                <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-10"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-11"><i
+                                        class="fa-solid fa-eye"></i></a>
+                            </div>
+                            <div class="modal fade" id="modal-a-11" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/p1 (3).png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
                                                     </div>
-                                                    <div class="cart-item-detail mt-3 mb-3">
-                                                        <p class="cart-item-name">Lubranta</p>
-                                                        <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                                    </div>
-                                                    <div class="cart-item-price">
-                                                        <span class="text-decoration-line-through" style="padding-right: 5px;">₹5880</span>
-                                                        <span>5500</span>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-share"></i>Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
                                             </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
-                                <div class="card-title">
-                                    <span class="text-decoration-line-through" style="padding-right: 5px;">₹5880</span>
-                                    <span>₹5500</span>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-10" tabindex="-1" aria-labelledby="modalLabel3"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel3">Lubranta 20W40 Heavy Duty Engine
+                                                Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="cart-item-outer">
+                                                <div class="cart-item-image">
+                                                    <img src="assest/image/p1 (3).png" alt="">
+                                                </div>
+                                                <div class="cart-item-detail mt-3 mb-3">
+                                                    <p class="cart-item-name">Lubranta</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
+                                                </div>
+                                                <div class="cart-item-price">
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹5500</span>
+                                                    <span>₹5200</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="button-primary">
-                                    <a class="button button-11">Add To Cart</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                            <div class="card-title">
+                                <span class="text-decoration-line-through" style="padding-right: 5px;">₹5500</span>
+                                <span>₹5200</span>
+                            </div>
+                            <div class="button-primary">
+                                <a class="button button-11">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3 col-6">
+                    <div class="text-center mb-5" style="width: 100%;">
+                        <div class="product-image">
+                            <img src="assest/image/p1 (4).png" class="card-img-top" alt="...">
+                            <div class="shopping-icon">
+                                <a href="#" class="me-2" data-bs-toggle="modal" data-bs-target="#modal-11"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-a-12"><i
+                                        class="fa-solid fa-eye"></i></a>
+                            </div>
+                            <div class="modal fade" id="modal-a-12" tabindex="-1" aria-labelledby="productModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <!-- Main Product Image -->
+                                                        <div class="product-image">
+                                                            <img src="assest/image/p1 (4).png"
+                                                                class="img-fluid" alt="Product Image">
+                                                        </div>
+
+                                                        <!-- Additional Images -->
+                                                        <div
+                                                            class="product-thumbnails d-flex justify-content-start mt-3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 1">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 2">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 3">
+                                                            <img src="assest/image/product-1-removebg-preview.png"
+                                                                class="img-thumbnail me-2" alt="Thumb 4">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <!-- Product Info -->
+                                                        <h4 id="productModalLabel">PERSPIACIATIS UNDE</h4>
+                                                        <p class="price text-success">$99.00</p>
+                                                        <p class="text-start">Sed ut perspiciatis unde omnis iste natus
+                                                            error sit voluptatem accusantium doloremque laudantium...
+                                                        </p>
+                                                        <ul class="text-start p-0">
+                                                            <li>Ut enim ad minima veniam, quis nostrum exercitationem.
+                                                            </li>
+                                                            <li>Nisi ut aliquid ex ea commodi consequatur.</li>
+                                                            <li>Quis autem vel eum iure reprehenderit.</li>
+                                                            <li>Velit esse quam nihil molestiae.</li>
+                                                        </ul>
+
+                                                        <!-- Quantity and Add to Cart -->
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <label for="quantity" class="me-2">Quantity</label>
+                                                            <input type="number" id="quantity" class="form-control"
+                                                                value="1" min="1">
+                                                        </div>
+                                                        <button class="btn btn-success">ADD TO CART</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal Footer with Social Sharing -->
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <div class="share-buttons">
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-share"></i>Share</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-twitter"></i> Tweet</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-google"></i> Google+</a>
+                                                <a href="#" class="btn btn-outline-secondary"><i
+                                                        class="bi bi-pinterest"></i> Pin</a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-11" tabindex="-1" aria-labelledby="modalLabel4"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel4">Lubranta 20W40 Heavy Duty Engine
+                                                Oil</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="cart-item-outer">
+                                                <div class="cart-item-image">
+                                                    <img src="assest/image/p1 (4).png" alt="">
+                                                </div>
+                                                <div class="cart-item-detail mt-3 mb-3">
+                                                    <p class="cart-item-name">Lubranta</p>
+                                                    <p class="cart-item-name">Lubranta 20W40 Heavy Duty Engine Oil,
+                                                        Bottle of 1 Litre</p>
+                                                </div>
+                                                <div class="cart-item-price">
+                                                    <span class="text-decoration-line-through"
+                                                        style="padding-right: 5px;">₹5880</span>
+                                                    <span>5500</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lubranta 20W40 Heavy Duty Engine Oil, Bottle of 1 Litre</p>
+                            <div class="card-title">
+                                <span class="text-decoration-line-through" style="padding-right: 5px;">₹5880</span>
+                                <span>₹5500</span>
+                            </div>
+                            <div class="button-primary">
+                                <a class="button button-11">Add To Cart</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
+
 
     <!-- footer start -->
     <footer class="footer-section">

@@ -139,3 +139,84 @@ i.fa-solid.fa-eye:hover {
 p.cart-item-name {
   text-align: left;
 }
+
+
+/* model-a */
+ /* Main product image */
+ .product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Thumbnail images */
+.product-thumbnails img {
+  cursor: pointer;
+  width: 50px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+/* Thumbnail hover effect */
+.product-thumbnails img:hover {
+  border-color: #28a745;
+}
+
+/* Modal content styling */
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Product name styling */
+.modal-body h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Product price styling */
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc541c !important;
+}
+
+/* Quantity input */
+#quantity {
+  max-width: 70px;
+}
+
+/* Add to cart button */
+.btn-success {
+  background-image: linear-gradient(to top, #dc541c 0%, #b42423 5%, #dc541c 100%) !important;
+  padding: 10px 20px;
+  border: #b42423;
+  font-size: 1rem;
+}
+
+
+/* Modal footer styling */
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Social share button icons */
+.share-buttons a {
+  margin-right: 10px;
+  font-size: 1.25rem;
+}
+
+/* Custom styling for icons (Bootstrap icons or FontAwesome can be used) */
+.bi {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+/* model-a */
+.cart-item-image>img {
+  width: 67px;
+}
