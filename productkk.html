@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <h1>Product Page</h1>
+    <div class="product" data-name="Treadmill" data-price="349">
+        <img src="treadmill.jpg" alt="Treadmill">
+        <h2>Treadmill</h2>
+        <p>Price: $349.00</p>
+        <button id="buyNowBtn">Buy Now</button>
+    </div>
+
+    <script>
+        // Add product to local storage when 'Buy Now' button is clicked
+        document.getElementById('buyNowBtn').addEventListener('click', function() {
+            const product = {
+                name: 'Treadmill',
+                price: 349
+            };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to cart page
+            window.location.href = 'cart.html';
+        });
+    </script>
+</body>
+</html>

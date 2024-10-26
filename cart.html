@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .cart-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item p {
+            margin: 0;
+        }
+
+        .cart-summary {
+            margin-top: 20px;
+        }
+
+        .remove-btn {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .checkout-btn {
+            background-color: #8bc34a;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .remove-btn:hover {
+            background-color: darkred;
+        }
+
+        .checkout-btn:hover {
+            background-color: #7cb342;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div id="cart-items">
+            <p>No items in the cart.</p>
+        </div>
+        <div class="cart-summary">
+            <p id="cart-total">Total: $0.00</p>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        // Fetch cart from local storage and display items
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            const totalElement = document.getElementById('cart-total');
+
+            cartItemsContainer.innerHTML = ''; // Clear previous items
+            let total = 0;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p>No items in the cart.</p>';
+            } else {
+                cart.forEach((item, index) => {
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `
+                        <p>${item.name} - $${item.price}</p>
+                        <button class="remove-btn" data-index="${index}">Remove</button>
+                    `;
+                    cartItemsContainer.appendChild(cartItem);
+                    total += parseFloat(item.price);
+                });
+            }
+
+            totalElement.textContent = `Total: $${total.toFixed(2)}`;
+            attachRemoveHandlers(); // Attach remove button functionality
+        }
+
+        // Attach remove button functionality to each remove button
+        function attachRemoveHandlers() {
+            const removeButtons = document.querySelectorAll('.remove-btn');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const index = this.getAttribute('data-index');
+                    removeItemFromCart(index);
+                });
+            });
+        }
+
+        // Function to remove item from cart
+        function removeItemFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1); // Remove item at the given index
+            localStorage.setItem('cart', JSON.stringify(cart)); // Update local storage
+            loadCart(); // Reload cart to reflect changes
+        }
+
+        // Load cart when page loads
+        window.onload = loadCart;
+    </script>
+</body>
+</html>
