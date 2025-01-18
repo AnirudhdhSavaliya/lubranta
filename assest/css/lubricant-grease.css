@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #555;
+}
+
+
+.breadcrumb span {
+  color: #000;
+  font-weight: bold;
+}
+
+.stock-status {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.stock-status label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.no-products {
+  background-color: #e4b860;
+  padding: 10px;
+  color: #000;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.no-products i {
+  margin-right: 10px;
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #333;
+}
+
+/* Layout for desktop */
+.main-product-area-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-product-area-inner {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .no-products {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    border-radius: 5px;
+    width: 100%;
+  }
+}
