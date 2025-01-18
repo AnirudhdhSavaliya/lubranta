@@ -4,6 +4,7 @@
   --background-color: #f2f2f2;
   --text-color: #000;
   --border-color: #a70000;
+  --box-color: #a70000;
   --hover-color: rgba(248, 0, 0, 0.5);
   --color: #fff;
   --bg: #495057;
@@ -832,7 +833,7 @@ textarea::placeholder {
 }
 
 .footer-section .contact-info {
-  background-color: var(--border-color);
+  background-color: var(--box-color);
   color: var(--white);
   padding: 20px;
   border-radius: 10px;

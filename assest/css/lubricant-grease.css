@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #555;
+  --secondary-color: #333;
+  --highlight-color: #e4b860;
+  --borders-color: #ddd;
+  --text-color: #000;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -11,12 +19,11 @@ body {
 
 .breadcrumb a {
   text-decoration: none;
-  color: #555;
+  color: var(--primary-color);
 }
 
-
 .breadcrumb span {
-  color: #000;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -31,9 +38,9 @@ body {
 }
 
 .no-products {
-  background-color: #e4b860;
+  background-color: var(--highlight-color);
   padding: 10px;
-  color: #000;
+  color: var(--text-color);
   border-radius: 5px;
   font-size: 14px;
   display: flex;
@@ -46,30 +53,34 @@ body {
 
 .search-bar {
   margin-top: 20px;
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .search-bar input {
   flex: 1;
-  padding: 10px;
+  padding: 10px 10px 10px 30px; /* Adjusted padding for icon */
   font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 5px 0 0 5px;
+  border: 1px solid var(--borders-color);
+  border-radius: 5px;
 }
 
 .search-bar button {
-  background-color: #555;
-  color: #fff;
+  position: absolute;
+  background-color: transparent;
+  color: var(--primary-color);
   border: none;
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 0 5px 5px 0;
   cursor: pointer;
+  right: 20px;
+}
+
+.search-bar button i {
+  font-size: 18px;
 }
 
 .search-bar button:hover {
-  background-color: #333;
+  background-color: var(--secondary-color);
 }
 
 /* Layout for desktop */
@@ -117,17 +128,7 @@ body {
     padding: 8px;
   }
 
-  .search-bar {
-    flex-direction: column;
-  }
-
-  .search-bar input {
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
   .search-bar button {
-    border-radius: 5px;
-    width: 100%;
+    right: 10px;
   }
 }

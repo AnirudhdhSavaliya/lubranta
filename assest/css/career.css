@@ -1,11 +1,11 @@
 :root {
     --primary-color: #b42423;
-    --secondary-color: #dc541c; /* Adjust as needed */
+    --secondary-color: #dc541c;
     --hover-color: #000000;
     --background-color: #ffffff;
-    --overlay-color: rgba(234, 234, 234, 0.97); /* Slightly transparent */
+    --overlay-color: rgba(234, 234, 234, 0.97); 
     --text-color: #000;
-    --label-color: #333; /* Optional for label text */
+    --label-color: #333; 
 }
 
 header {

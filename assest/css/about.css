@@ -1,15 +1,35 @@
-/* background image */
+:root {
+    --primary-color: #b42423;
+    --secondary-color: #dc541c;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+    --white-color: #ffffff;
+    --black-color:#000;
+    --light-overlay-color: rgba(255, 255, 255, 94%);
+    --dark-overlay-color: rgba(16, 16, 16, 0.7);
+    --dark-overlay-color2:rgb(0 0 0 / 70%);
+    --light-background-color: rgb(255 255 255 / 93%);
+    --button-background-color: #ffffff;
+    --button-hover-background: #8BC34A;
+    --button-border-radius: 45px;
+    --text-color: #b72e2d;
+    --box-shaddows:#5d5d5d36;
+    --light-red:rgba(206, 84, 84, 0.93);
+    --dark-gray:#b1b1b1;
+}
+
+
 ul,
 ol {
     padding: 0%;
     margin: 0%;
 }
 
+/* background image */
+
 .page-name-outer {
     position: relative;
     z-index: 1;
 }
-
 .page-name-outer::before {
     content: '';
     background-image: url(../image/page-banner.jpg);
@@ -30,14 +50,14 @@ ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0 0 0 / 70%);
+    background-color: var(--dark-overlay-color2);
     z-index: -1;
 }
 
 
 .elementor-heading-title {
     padding: 130px 0;
-    color: #ffffff;
+    color: var(--white-color);
     font-family: "Ubuntu", Sans-serif;
     font-size: 50px;
     font-weight: 600;
@@ -83,7 +103,7 @@ ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(255 255 255 / 94%);
+    background-color: var(--light-overlay-color);
     z-index: -1;
 }
 
@@ -95,7 +115,7 @@ ol {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     width: 100px;
     display: inline-block;
-    color: #ffffff;
+    color: var(--white-color);
     padding: 10px;
     flex-wrap: wrap;
     justify-content: left;
@@ -145,13 +165,13 @@ ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(16, 16, 16, 0.7);
+    background-color: var(--dark-overlay-color);
     z-index: -1;
 }
 
 .jurney-product-inner>.jurney>.card {
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px 0px var(--light-overlay-color);
 }
 
 .card-image-outer {
@@ -160,7 +180,7 @@ ol {
 }
 
 .jurney-product-inner>.jurney>.card>.card-body>.card-image-outer>.card-image {
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), (var(--secondary-color)));
     padding: 15px;
     border-radius: 20px;
 }
@@ -219,15 +239,15 @@ ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(255 255 255 / 93%);
+    background-color: var(--light-background-color);
     z-index: -1;
 }
 
 .service>.element-img>.elementor-image-box-wrapper {
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px #5d5d5d36;
+    box-shadow: 10px 10px 5px var(--box-shaddows);
 
 }
 
@@ -243,10 +263,10 @@ ol {
 
 .value-item>.image-wrapper>img {
     width: 15%;
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px #5d5d5d36;
+    box-shadow: 10px 10px 5px var(--box-shaddows);
 
 }
 
@@ -264,7 +284,7 @@ ol {
 }
 
 .inner-services-image {
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: 15px;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
     border-radius: 20px;
@@ -314,7 +334,7 @@ ol {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(206, 84, 84, 0.93);
+    background-color: var(--light-red);
     z-index: -1;
 }
 
@@ -329,12 +349,12 @@ ol {
     flex-wrap: wrap;
     margin: 0 auto 10px;
     padding: .5em;
-    background-color: ;
+    background-color: transparent;
     line-height: normal;
 }
 
 .inquiry-buttons>.button {
-    background: #ffffff;
+    background: var(--white-color);
     margin: 15px;
     padding: 18px 22px;
     text-align: center;
@@ -342,7 +362,7 @@ ol {
     position: relative;
     transition: .3s;
     z-index: 1;
-    color: #b72e2d;
+    color: var(--text-color);
     cursor: pointer;
     border-radius: 45px;
     -webkit-user-select: none;
@@ -352,7 +372,7 @@ ol {
 }
 
 .inquiry-buttons>a:hover {
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .inquiry-buttons>.button-5:hover:after {
@@ -370,8 +390,8 @@ ol {
     left: 0;
     z-index: -1;
     border-radius: 43px;
-    background-color: #8BC34A;
-    background-image: linear-gradient(to right, #dc3939, #B42423);
+    background-color: var(--button-hover-background);
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
     transition: all 0.3s ease;
 }
 
@@ -403,7 +423,7 @@ ol {
 }
 
 .trust-image {
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: 15px;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
     border-radius: 20px;
@@ -432,7 +452,7 @@ ol {
     left: 160px;
     height: 40px;
     width: 2px;
-    background-color: #b1b1b1;
+    background-color: var(--dark-gray);
     
 }
 
@@ -446,7 +466,7 @@ ol {
     width: 14px;
     z-index: 1;
     top: 120px;
-    background-color: #B42423;
+    background-color: var(--primary-color);
 }
 
 .trust-item-detail {
@@ -533,9 +553,9 @@ h5 {
     -webkit-justify-content: center;
     justify-content: center;
     margin: 0;
-    background: white;
+    background: var(--white-color);
     position: relative;
-    color: #000;
+    color: var(--black-color);
 }
 
 h2>span {
@@ -548,8 +568,8 @@ h2>span {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    background: white;
-    color: #000;
+    background: var(--white-color);
+    color: var(--black-color);
 
     position: relative;
 }
@@ -557,7 +577,7 @@ h2>span {
 h2>span:before {
     content: attr(data-text);
     position: absolute;
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     color: transparent;
 
@@ -572,7 +592,7 @@ h2>span:before {
 h5:before {
     content: attr(data-text);
     position: absolute;
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     color: transparent;
     background-size: 100% 90%;
@@ -589,7 +609,7 @@ h5:before {
     display: -webkit-flex;
     display: flex;
  
-    color: #000;
+    color: var(--black-color);
 
     position: relative;
 }
@@ -597,7 +617,7 @@ h5:before {
 .column-title:before {
     content: attr(data-text);
     position: absolute;
-    background: linear-gradient(135deg, #b42423, #dc541c);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     color: transparent;
 
@@ -610,14 +630,14 @@ h5:before {
 .color-anime {
     position: relative;
     text-transform: uppercase;
-    color: #000;
+    color: var(--black-color);
     position: relative;
 }
 
 .color-anime:before {
     content: attr(data-text);
     position: absolute;
-    background: #ffffff;
+    background: var(--white-color);
     -webkit-background-clip: text;
     color: transparent;
     background-size: 100% 90%;
@@ -646,7 +666,7 @@ h5:before {
 
 .footer-section .column-title {
     font-weight: bold;
-    color: black;
+    color: var(--black-color);
     margin-bottom: 20px;
 }
 
