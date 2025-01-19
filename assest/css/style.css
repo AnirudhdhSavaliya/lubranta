@@ -2,7 +2,7 @@
   --primary-color: #b42423;
   --secondary-color: #dc541c;
   --background-color: #f2f2f2;
-  --text-color: #000;
+  --text-black-color: #000;
   --border-color: #a70000;
   --box-color: #a70000;
   --hover-color: rgba(248, 0, 0, 0.5);
@@ -154,7 +154,7 @@ a.navbar-brand.d-md-none.d-xs-block.py-3>img {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: var(--text-color);
+  color: var(--text-black-color);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {

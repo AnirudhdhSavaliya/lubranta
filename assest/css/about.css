@@ -180,7 +180,7 @@ ol {
 }
 
 .jurney-product-inner>.jurney>.card>.card-body>.card-image-outer>.card-image {
-    background: linear-gradient(135deg, var(--primary-color), (var(--secondary-color)));
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding: 15px;
     border-radius: 20px;
 }
